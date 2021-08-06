@@ -1,0 +1,67 @@
+
+
+/*------------ ESTRUCTURA GRID EN PRODUCTOS--------------*/
+
+/* OPERADORES */
+
+.grillaPosicion{
+  margin: 0px;
+  justify-self: center;
+}
+
+
+
+/* GRID EN GALERIA DE IMAGENES */
+.contenedorGaleria {
+    display: grid;
+    grid-template-columns: 500px 400px 400px;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+    "titulo imagen1 imagen2"
+    "texto imagen3 imagen4";
+    background-color: #E9EDC9;
+    border-width: 0.1;
+    justify-items: stretch;
+    align-items: stretch;
+
+  .tituloGrilla {
+    grid-area: titulo;
+    align-self: end;
+    background-color: #E9EDC9;
+    text-align: center;
+  }
+  
+  .textoGrilla {
+    grid-area: texto;
+    align-self: auto;
+    justify-self: center;
+    text-align: center;
+    text-shadow: #292929;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    background-color: #E9EDC9;
+  }
+  
+  .imagen1 {
+    @extend .grillaPosicion;
+    grid-area: imagen1;
+  }
+  
+  .imagen2 {
+    @extend .grillaPosicion;
+    grid-area: imagen2;
+  }
+  
+  .imagen3 {
+    @extend .grillaPosicion;
+    grid-area: imagen3;
+
+  }
+  
+  .imagen4 {
+    @extend .grillaPosicion;
+    grid-area: imagen4;
+  }
+}

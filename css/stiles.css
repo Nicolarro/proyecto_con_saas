@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-size: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #041527;
+}
+
+/* OPERADORES */
+.header {
+  background-color: #CCD5AE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem;
+}
+
+.header .header__logo {
+  border-style: none;
+  flex-grow: 0;
+  margin-left: 1rem;
+  background-color: #CCD5AE;
+}
+
+/* SECCION CON BEM*/
+.header--color {
+  background-color: #CCD5AE;
+}
+
+/* OPERADORES */
+/* --------------FORMATO SOBRE FOOTER------------------------- */
+footer .footer--color {
+  background-color: #CCD5AE;
+  bottom: 0px;
+  justify-content: center;
+  margin-top: 0.25rem;
+  margin-bottom: 0rem;
+}
+
+footer .footer--position {
+  align-items: center;
+  padding: 0px;
+  text-align: center;
+  justify-items: end;
+}
+
+footer .footer__elementoFooter1 {
+  background-color: #CCD5AE;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+/* OPERADORES*/
+.flex, .section3 .section3__padreMain1, .section3 .section3__padreMain1 .section3__hijoMain1, .section3 .section3__padreMain1 .section3__hijoMain2, .section3 .section3__padreMain1 .section3__hijoMain2 .textoYfoto, .containerFlex, .padreServicios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* ESTILOS  */
+.section3 .section3__padreMain1 {
+  justify-content: center;
+  background-color: #E9EDC9;
+}
+
+.section3 .section3__padreMain1 .section3__hijoMain1 {
+  padding: 3rem;
+  flex-wrap: wrap;
+  background-color: #E9EDC9;
+}
+
+.section3 .section3__padreMain1 .section3__hijoMain2 {
+  padding: 3rem;
+  flex-wrap: wrap;
+  background-color: #E9EDC9;
+}
+
+.section3 .section3__padreMain1 .section3__hijoMain2 .textoYfoto {
+  font-weight: 500;
+  font-size: 2.2rem;
+  padding: 2rem;
+  border-style: solid;
+  border-width: thin;
+  border-color: #292929;
+}
+
+.section3 .section3__padreMain1 .section3__hijoMain2 .parrafos {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  color: #041527;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 3rem;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 2rem;
+}
+
+.section3--fotoJunta {
+  display: inline-block;
+  max-width: 100%;
+  height: 300px;
+  width: 800px;
+}
+
+/* SECCION CON BEM*/
+.containerFlex {
+  margin: 2rem;
+}
+
+.containerFlex .containerflex--estilocaja {
+  border-style: solid;
+  border-width: thin;
+  border-color: #c59d5f;
+}
+
+.containerFlex .containerflex--estilocaja .containerflex__tituloBox {
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 1;
+}
+
+/* FLEX SOBRE SECTION EN SERVICIOS  */
+.padreServicios {
+  background-color: #E9EDC9;
+}
+
+.padreServicios .hijoServicios {
+  padding: 3rem;
+  flex-wrap: wrap;
+  padding: 0rem;
+  background-color: #E9EDC9;
+}
+
+img {
+  border-style: solid;
+  border-width: thin;
+  border-color: #DBDBD1;
+  max-width: 100%;
+}
+
+/* SECCION CON BEM*/
+/* MIXIN */
+.carousel {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel .carousel--Tamano {
+  height: 450px;
+  width: 100%;
+}
+
+/* ESTILO SOBRE FORM - BOTON BOOSTRAP */
+.btn {
+  background-color: #CCD5AE;
+}
+
+/* ------------ESTILOS CONTACTO------------------------------------- */
+.form {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/*------------ ESTRUCTURA GRID EN PRODUCTOS--------------*/
+/* OPERADORES */
+.grillaPosicion, .contenedorGaleria .imagen1, .contenedorGaleria .imagen2, .contenedorGaleria .imagen3, .contenedorGaleria .imagen4 {
+  margin: 0px;
+  justify-self: center;
+}
+
+/* GRID EN GALERIA DE IMAGENES */
+.contenedorGaleria {
+  display: grid;
+  grid-template-columns: 500px 400px 400px;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-areas: "titulo imagen1 imagen2" "texto imagen3 imagen4";
+  background-color: #E9EDC9;
+  border-width: 0.1;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.contenedorGaleria .tituloGrilla {
+  grid-area: titulo;
+  align-self: end;
+  background-color: #E9EDC9;
+  text-align: center;
+}
+
+.contenedorGaleria .textoGrilla {
+  grid-area: texto;
+  align-self: auto;
+  justify-self: center;
+  text-align: center;
+  text-shadow: #292929;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 3rem;
+  background-color: #E9EDC9;
+}
+
+.contenedorGaleria .imagen1 {
+  grid-area: imagen1;
+}
+
+.contenedorGaleria .imagen2 {
+  grid-area: imagen2;
+}
+
+.contenedorGaleria .imagen3 {
+  grid-area: imagen3;
+}
+
+.contenedorGaleria .imagen4 {
+  grid-area: imagen4;
+}
+
+/* OPERADORES*/
+/* ESTILOS */
+div .mainTitle {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  opacity: 1;
+  background: transparent;
+  display: block;
+}
+
+div .mainTitle__parrafos {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  color: #041527;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 3rem;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 2rem;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* SECCION CON BEM*/
+.portada {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  background-image: url(../images/cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada .portada__insignia {
+  font-family: "Pinyon Script", cursive;
+  font-size: 7rem;
+  color: #c59d5f;
+  background-color: transparent;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  opacity: 2;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  animation-duration: 4s;
+  animation-name: aparecer;
+}
+
+div .h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+div .cursiva {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  color: #041527;
+  font-style: italic;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+/* ESTILO PREGUTNAS FRECUENTES */
+dl dt {
+  color: #6b705c;
+  font-size: 2rem;
+}
+
+.listaProductos {
+  list-style-type: disc;
+  list-style: inside;
+  font-size: 2rem;
+}
+
+.listaProductos {
+  text-align: 1px;
+}

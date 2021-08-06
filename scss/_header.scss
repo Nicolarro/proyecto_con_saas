@@ -1,0 +1,25 @@
+
+/* OPERADORES */
+
+$color1: #CCD5AE;
+
+
+.header{
+    background-color:  #CCD5AE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem;
+    .header__logo {
+      border-style: none;
+      flex-grow: 0;
+      margin-left: 1rem;
+      background-color:  $color1;
+    }
+  }
+
+  
+    /* SECCION CON BEM*/
+.header--color{
+    background-color:  #CCD5AE;
+        }

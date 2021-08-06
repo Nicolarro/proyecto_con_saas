@@ -1,0 +1,31 @@
+
+
+ /* OPERADORES */
+
+$color1: #CCD5AE;
+          
+  /* --------------FORMATO SOBRE FOOTER------------------------- */
+
+footer{        
+.footer--color {
+  background-color: $color1;
+  bottom: 0px;
+  justify-content: center;
+  margin-top: 0.25rem;
+  margin-bottom: 0rem;
+}
+.footer--position{
+  align-items: center;
+  padding: 0px;
+text-align: center;
+justify-items: end;
+  }
+.footer__elementoFooter1 {
+  background-color: $color1;
+  color:rgba(0,0,0,.5) ;
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+} 
+}
