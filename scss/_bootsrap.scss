@@ -1,5 +1,10 @@
 
-          /* SECCION CON BEM*/
+          /* SECCION CON MIXIN */
+
+          /* VARIABLES */
+          $color1: #CCD5AE;
+          $color2:#6b705c;
+          $color3:#d5d5d5;
 
           /* MIXIN */
 
@@ -8,8 +13,6 @@
         width: $width;
      
       }
-
-      $color1: #CCD5AE;
 
           .carousel{
             margin-top: 2rem;
@@ -23,12 +26,13 @@
         /* ESTILO SOBRE FORM - BOTON BOOSTRAP */
 .btn{
     background-color: $color1
-    
   }
   
   /* ------------ESTILOS CONTACTO------------------------------------- */
-  .form {
+  .form--color {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    border-color: $color3;
+    border-width: thin;
   }
   

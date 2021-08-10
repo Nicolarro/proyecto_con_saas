@@ -34,6 +34,7 @@ body {
   background-color: #CCD5AE;
 }
 
+/* VARIABLES */
 /* OPERADORES */
 /* --------------FORMATO SOBRE FOOTER------------------------- */
 footer .footer--color {
@@ -46,7 +47,7 @@ footer .footer--color {
 
 footer .footer--position {
   align-items: center;
-  padding: 0px;
+  padding: 1rem -1;
   text-align: center;
   justify-items: end;
 }
@@ -60,41 +61,56 @@ footer .footer__elementoFooter1 {
   justify-content: center;
 }
 
-/* OPERADORES*/
-.flex, .section3 .section3__padreMain1, .section3 .section3__padreMain1 .section3__hijoMain1, .section3 .section3__padreMain1 .section3__hijoMain2, .section3 .section3__padreMain1 .section3__hijoMain2 .textoYfoto, .containerFlex, .padreServicios {
+/* SECCION CON CONDICIONAL */
+/* SECCION CON OPERADORES */
+/* VARIALBES*/
+.flex, .section3 .section3__padreMain1, .section3 .section3__padreMain1 .section3__hijoMain1, .section3 .section3__padreMain1 .section3--fotoJunta2, .section3 .section3__padreMain1 .section3--fotoJunta, .section3 .section3__padreMain1 .section3__hijoMain2, .section3 .section3__padreMain1 .estilotextoYfoto, .containerFlex, .padreServicios, .hijoServicios, .hijoServicios2 {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-/* ESTILOS  */
+/* ESTILOS FLEXBOX  */
 .section3 .section3__padreMain1 {
   justify-content: center;
   background-color: #E9EDC9;
 }
 
 .section3 .section3__padreMain1 .section3__hijoMain1 {
-  padding: 3rem;
   flex-wrap: wrap;
   background-color: #E9EDC9;
+}
+
+.section3 .section3__padreMain1 .section3--fotoJunta2 {
+  flex-wrap: wrap;
+  height: 300px;
+  width: 450px;
+}
+
+.section3 .section3__padreMain1 .section3--fotoJunta {
+  flex-wrap: wrap;
+  height: 300px;
+  width: 450px;
 }
 
 .section3 .section3__padreMain1 .section3__hijoMain2 {
-  padding: 3rem;
+  padding: 1rem;
+  padding: 0.5rem;
+  margin: 1.5rem;
   flex-wrap: wrap;
   background-color: #E9EDC9;
+  border-style: solid;
+  border-width: thin;
+  border-color: #d5d5d5;
 }
 
-.section3 .section3__padreMain1 .section3__hijoMain2 .textoYfoto {
+.section3 .section3__padreMain1 .estilotextoYfoto {
   font-weight: 500;
   font-size: 2.2rem;
   padding: 2rem;
-  border-style: solid;
-  border-width: thin;
-  border-color: #292929;
 }
 
-.section3 .section3__padreMain1 .section3__hijoMain2 .parrafos {
+.section3 .section3__padreMain1 .parrafos {
   text-align: center;
   display: block;
   font-size: 2rem;
@@ -109,16 +125,10 @@ footer .footer__elementoFooter1 {
   margin: 2rem;
 }
 
-.section3--fotoJunta {
-  display: inline-block;
-  max-width: 100%;
-  height: 300px;
-  width: 800px;
-}
-
 /* SECCION CON BEM*/
 .containerFlex {
   margin: 2rem;
+  align-items: center;
 }
 
 .containerFlex .containerflex--estilocaja {
@@ -140,21 +150,47 @@ footer .footer__elementoFooter1 {
   background-color: #E9EDC9;
 }
 
-.padreServicios .hijoServicios {
+.hijoServicios {
   padding: 3rem;
   flex-wrap: wrap;
   padding: 0rem;
   background-color: #E9EDC9;
 }
 
-img {
+.hijoServicios img {
   border-style: solid;
   border-width: thin;
   border-color: #DBDBD1;
-  max-width: 100%;
 }
 
-/* SECCION CON BEM*/
+.hijoServicios2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.hijoServicios2 .estilotextoYfoto {
+  font-weight: 500;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.hijoServicios2 .parrafos {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  color: #041527;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 3rem;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 2rem;
+}
+
+/* SECCION CON MIXIN */
+/* VARIABLES */
 /* MIXIN */
 .carousel {
   margin-top: 2rem;
@@ -172,9 +208,11 @@ img {
 }
 
 /* ------------ESTILOS CONTACTO------------------------------------- */
-.form {
+.form--color {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  border-color: #d5d5d5;
+  border-width: thin;
 }
 
 /*------------ ESTRUCTURA GRID EN PRODUCTOS--------------*/
@@ -182,6 +220,11 @@ img {
 .grillaPosicion, .contenedorGaleria .imagen1, .contenedorGaleria .imagen2, .contenedorGaleria .imagen3, .contenedorGaleria .imagen4 {
   margin: 0px;
   justify-self: center;
+}
+
+.section3--fotoJunta3 {
+  height: 300px;
+  width: 400px;
 }
 
 /* GRID EN GALERIA DE IMAGENES */
@@ -218,6 +261,10 @@ img {
 
 .contenedorGaleria .imagen1 {
   grid-area: imagen1;
+}
+
+.contenedorGaleria .imagen1:hover {
+  background-color: #E9EDC9;
 }
 
 .contenedorGaleria .imagen2 {
@@ -259,15 +306,6 @@ div .mainTitle__parrafos {
   margin: 2rem;
 }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* SECCION CON BEM*/
 .portada {
   display: flex;
@@ -295,6 +333,43 @@ div .mainTitle__parrafos {
   margin-bottom: 2rem;
   animation-duration: 4s;
   animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  align-items: center;
+  opacity: 1;
+  margin: 1.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  opacity: 1;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  text-align: left;
+  margin-left: 3rem;
 }
 
 div .h3 {

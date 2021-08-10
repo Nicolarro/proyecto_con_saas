@@ -2,6 +2,10 @@
 
 /*------------ ESTRUCTURA GRID EN PRODUCTOS--------------*/
 
+$color1: #CCD5AE;
+$color2:#6b705c;
+$color3:#d5d5d5;
+
 /* OPERADORES */
 
 .grillaPosicion{
@@ -9,7 +13,14 @@
   justify-self: center;
 }
 
+@mixin sizes ($width, $height) { //SECCION CON MIXIN//
+  height: $height;
+  width: $width;
+}
 
+.section3--fotoJunta3{
+@include sizes (400px,300px) // 
+}
 
 /* GRID EN GALERIA DE IMAGENES */
 .contenedorGaleria {
@@ -49,6 +60,11 @@
     grid-area: imagen1;
   }
   
+  .imagen1:hover{
+    
+     background-color: #E9EDC9;
+  }
+
   .imagen2 {
     @extend .grillaPosicion;
     grid-area: imagen2;

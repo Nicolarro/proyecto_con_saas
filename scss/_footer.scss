@@ -1,8 +1,14 @@
 
 
- /* OPERADORES */
+ /* VARIABLES */
 
-$color1: #CCD5AE;
+ $color1: #CCD5AE;
+ $color2:#6b705c;
+ $color3:#d5d5d5;
+
+ /* OPERADORES */
+ $padding:1rem;
+ $margin:1rem;
           
   /* --------------FORMATO SOBRE FOOTER------------------------- */
 
@@ -16,7 +22,7 @@ footer{
 }
 .footer--position{
   align-items: center;
-  padding: 0px;
+  padding: ($padding -1); //SECION CON OPERADOR//
 text-align: center;
 justify-items: end;
   }
