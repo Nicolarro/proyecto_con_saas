@@ -110,7 +110,7 @@
     /* FORMATO SOBRE LAS LISTAS DE NAVEGACION  */
     
   
-     */
+    
     /* FLEX SOBRE SECTION 2 (INDEX) */
     
     .portada{
@@ -219,31 +219,30 @@
       
     }
     
-    .fotoJunta {
-      display: inline-block;
+    .section3--fotoJunta {
       max-width: 100%;
       width: 1200px;
       height: 300px;
     }
     
-    .caja {
-      text-align: justify;
-      /*   display: block; */
-      font-size: 2rem;
-      color: #041527;
-      font-weight: 300;
-      letter-spacing: 0.5px;
-      line-height: 3rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
+
+    .section3--fotoJunta2 {
+        max-width: 100%;
+        width: 200px;
+        height: 300px;
+      }
+
+      .section3--fotoJunta3 {
+        max-width: 100%;
+        width: 1200px;
+        height: 300px;
+      }
     
     /* IMAGENES  */
     img {
       border-style: solid;
       border-width: thin;
       border-color: #DBDBD1;
-      max-width: 100%;
     }
     
     .logoRedes {
@@ -254,8 +253,6 @@
     /* --------------FORMATO SOBRE FOOTER------------------------- */
     .footer--color {
       background-color: #ccd5ae;
-      /*   position: fixed; */
-      display: block;
       bottom: 0px;
       justify-content: center;
       align-items: center;
@@ -266,15 +263,14 @@
       margin-bottom: 0rem;
     }
     
-    /* -------FLEX SOBRE FOOTER----- */
-    
-/*     .padreFlex2 {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
+
+    .footer--position{
+        align-items: center;
+        padding: ($padding -1);
       text-align: center;
-      list-style-type: none;
-    } */
+      justify-items: end;
+        }
+    /* -------FLEX SOBRE FOOTER----- */
     
     .footer__elementoFooter {
       color: #041527;
@@ -307,13 +303,9 @@
       color: #041527;
     }
     
-    .header {
-      background-color:  #CCD5AE;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0rem;
-    }
+    .header--color {
+        background-color:  #CCD5AE;
+      }
     
     /* FORMATO ENCABEZADO PRINCIPAL */
     h1 {
@@ -323,7 +315,7 @@
       opacity: 1;
     }
     
-    .insignia {
+    .portada__insignia {
       font-family: "Pinyon Script", cursive;
       font-size: 5rem;
       color: #c59d5f;
@@ -354,7 +346,7 @@
     
     /* TRANSLATE SOBRE SOLOINDEX */
     
-    .logo {
+    .header__logo {
       border-style: none;
       flex-grow: 0;
       margin-left: 1rem;
@@ -400,54 +392,7 @@
     }
     
     /* FORMATO SOBRE LAS LISTAS DE NAVEGACION  */
-    
-    /* FORMATO SOBRE EL MENU  */
-    
-    .menu {
-      display: flex;
-      gap: 30px;
-      padding-right: 2rem; 
-    }
-    .menu li {
-      display: inline-block;
-      position: relative;
-      list-style: none;
-    }
-    
-    .activoMenu {
-      text-decoration: none;
-      color: #041527;
-      font-size: 2rem;
-      list-style: none;
-    }
-    .submenu {
-      position: absolute;
-      display: none;
-      border-style: solid;
-      border-width: thin;
-      border-color: #292929;
-    }
-    
-    .submenu li {
-      display: block;
-      background-color: #CCD5AE;;
-      width: 175px;
-      text-align: center;
-      padding-left: 1rem;
-    }
-    
-    nav ul li a:hover{
-      text-decoration: none;
-      color: #292929
-    }
-    
-    .menu li:hover .submenu {
-      display: block;
-      margin: 0px;
-      padding: 0px;
-      text-decoration: none;
-    }
-    
+        
     /* FLEX SOBRE SECTION 2 (INDEX) */
     
     .portada{
@@ -462,20 +407,20 @@
     }
     
     /* FLEX SOBRE SECTION 3 (INDEX) */
-    .padreMain1 {
+    .section3__padreMain1 {
       display: flex;
       flex-direction: row;
       align-items: center;
       background-color: #E9EDC9;
     }
     
-    .hijoMain1 {
+    .section3__hijoMain1 {
       padding: 3rem;
       flex-wrap: wrap;
       background-color: #E9EDC9;
     }
     
-    .hijoMain2{
+    .section3__hijoMain2{
       padding: 3rem;
       flex-wrap: wrap;
       background-color: #E9EDC9;
@@ -496,7 +441,7 @@
       margin-bottom: 2rem;
     } 
     
-    .carouselTamano{
+    .carousel--Tamano{
       width: 100%;
       height: 450px;
     }
@@ -511,7 +456,7 @@
       margin: 2rem;
     }
     
-    .estilocaja{
+    .containerflex--estilocaja{
       border-style: solid;
       border-width: thin;
       border-color: #c59d5f;
@@ -520,10 +465,9 @@
     }
     
     
-    .tituloBox{
+    .containerflex__tituloBox{
       font-weight: bold;
       margin-top: 2rem;
-      /*   margin-bottom: 2rem; */
       font-size: 2rem;
       text-align: center;
       opacity: 1;
@@ -531,7 +475,7 @@
     
     /* -------FORMATO A PARRAFOS------- */
     
-    .parrafos {
+    .section3__parrafos {
       text-align: center;
       display: block;
       font-size: 2rem;
@@ -546,7 +490,7 @@
       margin: 2rem;
     }
     
-    .textoYfoto {
+    .section3--estilotextoYfoto {
       font-weight: 500;
       font-size: 2rem;
       padding: 2rem;
@@ -556,31 +500,19 @@
       
     }
     
-    .fotoJunta {
+    .section3--fotoJunta {
       display: inline-block;
       max-width: 100%;
       width: 1200px;
       height: 300px;
     }
     
-    .caja {
-      text-align: justify;
-      /*   display: block; */
-      font-size: 2rem;
-      color: #041527;
-      font-weight: 300;
-      letter-spacing: 0.5px;
-      line-height: 3rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-    
+        
     /* IMAGENES  */
     img {
       border-style: solid;
       border-width: thin;
       border-color: #DBDBD1;
-      max-width: 100%;
     }
     
     .logoRedes {
@@ -589,10 +521,8 @@
     
     
     /* --------------FORMATO SOBRE FOOTER------------------------- */
-    .footer {
+    .footer--color {
       background-color: #ccd5ae;
-      /*   position: fixed; */
-      display: block;
       bottom: 0px;
       justify-content: center;
       align-items: center;
@@ -605,15 +535,16 @@
     
     /* -------FLEX SOBRE FOOTER----- */
     
-    .padreFlex2 {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      text-align: center;
-      list-style-type: none;
-    }
     
-    .elementoFooter {
+    .footer--position{
+        align-items: center;
+        padding: ($padding -1);
+      text-align: center;
+      justify-items: end;
+        }
+
+
+    .footer__elementoFooter {
       color: #041527;
       font-size: 2.5rem;
       text-decoration: none;
@@ -621,7 +552,7 @@
     
     /* -----------------------ESTILOS INDEX------------------------------- */
     
-    .letraCapit {
+    .section3--letraCapit {
       text-transform: capitalize;
     }
     
@@ -645,13 +576,9 @@
       color: #041527;
     }
     
-    .header {
-      background-color:  #CCD5AE;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0rem;
-    }
+    .header--color {
+        background-color:  #CCD5AE;
+      }
     
     /* FORMATO ENCABEZADO PRINCIPAL */
     h1 {
@@ -661,7 +588,7 @@
       opacity: 1;
     }
     
-    .insignia {
+    .portada__insignia {
       font-family: "Pinyon Script", cursive;
       font-size: 7rem;
       color: #c59d5f;
@@ -692,7 +619,7 @@
     
     /* TRANSLATE SOBRE SOLOINDEX */
     
-    .logo {
+    .header__logo {
       border-style: none;
       flex-grow: 0;
       margin-left: 1rem;
@@ -726,6 +653,7 @@
       text-align: left;
       margin-left: 3rem;
     }
+
     .cursiva {
       font-size: 3.2rem;
       line-height: 3.2rem;
@@ -739,52 +667,6 @@
     
     /* FORMATO SOBRE LAS LISTAS DE NAVEGACION  */
     
-    /* FORMATO SOBRE EL MENU  */
-    
-    .menu {
-      display: flex;
-      gap: 30px;
-      padding-right: 2rem; 
-    }
-    .menu li {
-      display: inline-block;
-      position: relative;
-      list-style: none;
-    }
-    
-    .activoMenu {
-      text-decoration: none;
-      color: #041527;
-      font-size: 2.5rem;
-      list-style: none;
-    }
-    .submenu {
-      position: absolute;
-      display: none;
-      border-style: solid;
-      border-width: thin;
-      border-color: #292929;
-    }
-    
-    .submenu li {
-      display: block;
-      background-color: #CCD5AE;;
-      width: 175px;
-      text-align: center;
-      padding-left: 1rem;
-    }
-    
-    nav ul li a:hover{
-      text-decoration: none;
-      color: #292929
-    }
-    
-    .menu li:hover .submenu {
-      display: block;
-      margin: 0px;
-      padding: 0px;
-      text-decoration: none;
-    }
     
     /* FLEX SOBRE SECTION 2 (INDEX) */
     
@@ -800,20 +682,20 @@
     }
     
     /* FLEX SOBRE SECTION 3 (INDEX) */
-    .padreMain1 {
+    .section3__padreMain1 {
       display: flex;
       flex-direction: row;
       align-items: center;
       background-color: #E9EDC9;
     }
     
-    .hijoMain1 {
+    .section3__hijoMain1 {
       padding: 3rem;
       flex-wrap: wrap;
       background-color: #E9EDC9;
     }
     
-    .hijoMain2{
+    .section3__hijoMain2{
       padding: 3rem;
       flex-wrap: wrap;
       background-color: #E9EDC9;
@@ -834,7 +716,7 @@
       margin-bottom: 2rem;
     } 
     
-    .carouselTamano{
+    .carousel--Tamano{
       width: 100%;
       height: 450px;
     }
@@ -849,7 +731,7 @@
       margin: 2rem;
     }
     
-    .estilocaja{
+    .containerflex--estilocaja{
       border-style: solid;
       border-width: thin;
       border-color: #c59d5f;
@@ -858,10 +740,9 @@
     }
     
     
-    .tituloBox{
+    .containerflex__tituloBox{
       font-weight: bold;
       margin-top: 2rem;
-      /*   margin-bottom: 2rem; */
       font-size: 2rem;
       text-align: center;
       opacity: 1;
@@ -869,7 +750,7 @@
     
     /* -------FORMATO A PARRAFOS------- */
     
-    .parrafos {
+    .section3__parrafos {
       text-align: center;
       display: block;
       font-size: 2rem;
@@ -884,7 +765,7 @@
       margin: 2rem;
     }
     
-    .textoYfoto {
+    .section3--estilotextoYfoto {
       font-weight: 500;
       font-size: 2.2rem;
       padding: 2rem;
@@ -894,31 +775,19 @@
       
     }
     
-    .fotoJunta {
+    .section3--fotoJunta {
       display: inline-block;
       max-width: 100%;
       width: 1200px;
       height: 300px;
     }
     
-    .caja {
-      text-align: justify;
-      /*   display: block; */
-      font-size: 2rem;
-      color: #041527;
-      font-weight: 300;
-      letter-spacing: 0.5px;
-      line-height: 3rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-    
+
     /* IMAGENES  */
     img {
       border-style: solid;
       border-width: thin;
       border-color: #DBDBD1;
-      max-width: 100%;
     }
     
     .logoRedes {
@@ -927,10 +796,8 @@
     
     
     /* --------------FORMATO SOBRE FOOTER------------------------- */
-    .footer {
+    .footer--color {
       background-color: #ccd5ae;
-      /*   position: fixed; */
-      display: block;
       bottom: 0px;
       justify-content: center;
       align-items: center;
@@ -942,16 +809,16 @@
     }
     
     /* -------FLEX SOBRE FOOTER----- */
-    
-    .padreFlex2 {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
+
+
+    .footer--position{
+        align-items: center;
+        padding: ($padding -1);
       text-align: center;
-      list-style-type: none;
-    }
-    
-    .elementoFooter {
+      justify-items: end;
+        }
+
+    .footer__elementoFooter {
       color: #041527;
       font-size: 2.5rem;
       text-decoration: none;
@@ -959,7 +826,7 @@
     
     /* -----------------------ESTILOS INDEX------------------------------- */
     
-    .letraCapit {
+    .section3--letraCapit {
       text-transform: capitalize;
     }
     
@@ -982,12 +849,8 @@
       color: #041527;
     }
     
-    .header {
+    .header--color {
       background-color:  #CCD5AE;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0rem;
     }
     
     /* FORMATO ENCABEZADO PRINCIPAL */
@@ -998,7 +861,7 @@
       opacity: 1;
     }
     
-    .insignia {
+    .portada__insignia {
       font-family: "Pinyon Script", cursive;
       font-size: 7rem;
       color: #c59d5f;
@@ -1029,7 +892,7 @@
     
     /* TRANSLATE SOBRE SOLOINDEX */
     
-    .logo {
+    .header__logo {
       border-style: none;
       flex-grow: 0;
       margin-left: 1rem;
@@ -1076,52 +939,7 @@
     
     /* FORMATO SOBRE LAS LISTAS DE NAVEGACION  */
     
-    /* FORMATO SOBRE EL MENU  */
-    
-    .menu {
-      display: flex;
-      gap: 30px;
-      padding-right: 2rem; 
-    }
-    .menu li {
-      display: inline-block;
-      position: relative;
-      list-style: none;
-    }
-    
-    .activoMenu {
-      text-decoration: none;
-      color: #041527;
-      font-size: 2.5rem;
-      list-style: none;
-    }
-    .submenu {
-      position: absolute;
-      display: none;
-      border-style: solid;
-      border-width: thin;
-      border-color: #292929;
-    }
-    
-    .submenu li {
-      display: block;
-      background-color: #CCD5AE;;
-      width: 175px;
-      text-align: center;
-      padding-left: 1rem;
-    }
-    
-    nav ul li a:hover{
-      text-decoration: none;
-      color: #292929
-    }
-    
-    .menu li:hover .submenu {
-      display: block;
-      margin: 0px;
-      padding: 0px;
-      text-decoration: none;
-    }
+
     
     /* FLEX SOBRE SECTION 2 (INDEX) */
     
@@ -1137,20 +955,20 @@
     }
     
     /* FLEX SOBRE SECTION 3 (INDEX) */
-    .padreMain1 {
+    .section3__padreMain1 {
       display: flex;
       flex-direction: row;
       align-items: center;
       background-color: #E9EDC9;
     }
     
-    .hijoMain1 {
+    .section3__hijoMain1 {
       padding: 3rem;
       flex-wrap: wrap;
       background-color: #E9EDC9;
     }
     
-    .hijoMain2{
+    .section3__hijoMain2{
       padding: 3rem;
       flex-wrap: wrap;
       background-color: #E9EDC9;
@@ -1171,7 +989,7 @@
       margin-bottom: 2rem;
     } 
     
-    .carouselTamano{
+    .carousel--Tamano{
       width: 100%;
       height: 450px;
     }
@@ -1186,7 +1004,7 @@
       margin: 2rem;
     }
     
-    .estilocaja{
+    .containerflex--estilocaja{
       border-style: solid;
       border-width: thin;
       border-color: #c59d5f;
@@ -1195,10 +1013,9 @@
     }
     
     
-    .tituloBox{
+    .containerflex__tituloBox{
       font-weight: bold;
       margin-top: 2rem;
-      /*   margin-bottom: 2rem; */
       font-size: 2rem;
       text-align: center;
       opacity: 1;
@@ -1206,7 +1023,7 @@
     
     /* -------FORMATO A PARRAFOS------- */
     
-    .parrafos {
+    .section3__parrafos {
       text-align: center;
       display: block;
       font-size: 2rem;
@@ -1221,7 +1038,7 @@
       margin: 2rem;
     }
     
-    .textoYfoto {
+    .section3--estilotextoYfoto {
       font-weight: 500;
       font-size: 2.2rem;
       padding: 2rem;
@@ -1231,23 +1048,11 @@
       
     }
     
-    .fotoJunta {
+    .section3--fotoJunta {
       display: inline-block;
       max-width: 100%;
       width: 1200px;
       height: 300px;
-    }
-    
-    .caja {
-      text-align: justify;
-      /*   display: block; */
-      font-size: 2rem;
-      color: #041527;
-      font-weight: 300;
-      letter-spacing: 0.5px;
-      line-height: 3rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
     }
     
     /* IMAGENES  */
@@ -1255,7 +1060,6 @@
       border-style: solid;
       border-width: thin;
       border-color: #DBDBD1;
-      max-width: 100%;
     }
     
     .logoRedes {
@@ -1264,39 +1068,38 @@
     
     
     /* --------------FORMATO SOBRE FOOTER------------------------- */
-    .footer {
-      background-color: #ccd5ae;
-      /*   position: fixed; */
-      display: block;
-      bottom: 0px;
-      justify-content: center;
-      align-items: center;
-      align-content: flex-end;
-      padding-top: 0.2rem;
-      padding-bottom: 0.5rem;
-      margin-top: 0.25rem;
-      margin-bottom: 0rem;
-    }
-    
+    .footer--color {
+        background-color:  #CCD5AE;
+      }
     /* -------FLEX SOBRE FOOTER----- */
     
-    .padreFlex2 {
+/*    .padreFlex2 {
       display: flex;
       flex-direction: row;
       gap: 30px;
       text-align: center;
       list-style-type: none;
-    }
+    }  */
     
-    .elementoFooter {
+
+    .footer--position{
+        align-items: center;
+        padding: ($padding -1);
+      text-align: center;
+      justify-items: end;
+        }
+
+
+    .footer__elementoFooter {
       color: #041527;
       font-size: 2.5rem;
       text-decoration: none;
+
     }
     
     /* -----------------------ESTILOS INDEX------------------------------- */
     
-    .letraCapit {
+    .section3--letraCapit {
       text-transform: capitalize;
     }
     

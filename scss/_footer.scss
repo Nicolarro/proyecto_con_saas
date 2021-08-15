@@ -12,19 +12,18 @@
           
   /* --------------FORMATO SOBRE FOOTER------------------------- */
 
-footer{        
+footer{     
 .footer--color {
   background-color: $color1;
-  bottom: 0px;
-  justify-content: center;
+/*   bottom: 0px; */
   margin-top: 0.25rem;
   margin-bottom: 0rem;
 }
 .footer--position{
-  align-items: center;
+  align-items: center !important;
   padding: ($padding -1); //SECION CON OPERADOR//
-text-align: center;
-justify-items: end;
+text-align: center ;
+justify-items: center;
   }
 .footer__elementoFooter1 {
   background-color: $color1;
