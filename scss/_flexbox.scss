@@ -60,9 +60,8 @@
                   border-style: solid;
                   border-width: thin;
                   border-color: $color3;
-               }
+               
                 .section3--estilotextoYfoto{
-                  @extend .flex;
                   font-weight: 500;
                   font-size: 2.2rem;
                   padding: ($padding * 2); //SECION CON OPERADOR//
@@ -81,7 +80,7 @@
                   margin-inline-end: 0px;
                   margin: ($margin * 2); //SECCION CON OPERADOR//
                 }
-              
+              }
               }
             }
           

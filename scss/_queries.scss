@@ -1,4 +1,18 @@
-/* -------MEDIA QUERY PARA EL INDEX- MOBILE FIRST------- */
+/* -------MEDIA QUERY PARA LA PAGINA- MOBILE FIRST------- */
+
+$padding:1rem;
+$margin: 1rem;
+
+@mixin sizes ($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -143,7 +157,52 @@
       flex-wrap: wrap;
       background-color: #E9EDC9;
     }
+
     
+    .padreServicios {
+        @extend .flex;
+          background-color: #E9EDC9;
+        }
+        .hijoServicios {
+          @extend .flex;
+          padding: ($padding * 3);
+          flex-wrap: wrap;
+          padding: 0rem;
+          background-color: #E9EDC9;
+                  .hijoServicios__foto {
+                    @extend .flex;
+                    flex-wrap: wrap;
+                    @include sizes(350px,300px);         
+                    border-color: #DBDBD1;
+                    }
+              }
+              .hijoServicios2{
+                    @extend .flex;
+                    margin-left: 1rem;
+                    margin-right: 1rem;          
+                            .section3--estilotextoYfoto{
+                              font-weight: 500;
+                              font-size: 2.2rem;
+                              padding: 2rem;
+                            }
+                            .section3__parrafos{
+                              text-align: center;
+                              display: block;
+                              font-size: 2rem;
+                              color: #041527;
+                              font-weight: 300;
+                              letter-spacing: 0.5px;
+                              line-height: 3rem;
+                              margin-block-start: 10px;
+                              margin-block-end: 10px;
+                              margin-inline-start: 0px;
+                              margin-inline-end: 0px;
+                              margin: 2rem;
+                            }
+                          }
+
+
+
     /* ESTILO INDEX BOOSTRAP */
     
     .nosotros{
@@ -425,6 +484,48 @@
       flex-wrap: wrap;
       background-color: #E9EDC9;
     }
+
+    .padreServicios {
+        @extend .flex;
+          background-color: #E9EDC9;
+        }
+        .hijoServicios {
+          @extend .flex;
+          padding: ($padding * 3);
+          flex-wrap: wrap;
+          padding: 0rem;
+          background-color: #E9EDC9;
+                  .hijoServicios__foto {
+                    @extend .flex;
+                    flex-wrap: wrap;
+                    @include sizes(350px,300px);         
+                    border-color: #DBDBD1;
+                    }
+              }
+              .hijoServicios2{
+                    @extend .flex;
+                    margin-left: 1rem;
+                    margin-right: 1rem;          
+                            .section3--estilotextoYfoto{
+                              font-weight: 500;
+                              font-size: 2.2rem;
+                              padding: 2rem;
+                            }
+                            .section3__parrafos{
+                              text-align: center;
+                              display: block;
+                              font-size: 2rem;
+                              color: #041527;
+                              font-weight: 300;
+                              letter-spacing: 0.5px;
+                              line-height: 3rem;
+                              margin-block-start: 10px;
+                              margin-block-end: 10px;
+                              margin-inline-start: 0px;
+                              margin-inline-end: 0px;
+                              margin: 2rem;
+                            }
+                          }
     
     /* ESTILO INDEX BOOSTRAP */
     
@@ -700,6 +801,48 @@
       flex-wrap: wrap;
       background-color: #E9EDC9;
     }
+
+    .padreServicios {
+        @extend .flex;
+          background-color: #E9EDC9;
+        }
+        .hijoServicios {
+          @extend .flex;
+          padding: ($padding * 3);
+          flex-wrap: wrap;
+          padding: 0rem;
+          background-color: #E9EDC9;
+                  .hijoServicios__foto {
+                    @extend .flex;
+                    flex-wrap: wrap;
+                    @include sizes(350px,300px);         
+                    border-color: #DBDBD1;
+                    }
+              }
+              .hijoServicios2{
+                    @extend .flex;
+                    margin-left: 1rem;
+                    margin-right: 1rem;          
+                            .section3--estilotextoYfoto{
+                              font-weight: 500;
+                              font-size: 2.2rem;
+                              padding: 2rem;
+                            }
+                            .section3__parrafos{
+                              text-align: center;
+                              display: block;
+                              font-size: 2rem;
+                              color: #041527;
+                              font-weight: 300;
+                              letter-spacing: 0.5px;
+                              line-height: 3rem;
+                              margin-block-start: 10px;
+                              margin-block-end: 10px;
+                              margin-inline-start: 0px;
+                              margin-inline-end: 0px;
+                              margin: 2rem;
+                            }
+                          }
     
     /* ESTILO INDEX BOOSTRAP */
     
@@ -974,6 +1117,49 @@
       background-color: #E9EDC9;
     }
     
+
+    .padreServicios {
+        @extend .flex;
+          background-color: #E9EDC9;
+        }
+        .hijoServicios {
+          @extend .flex;
+          padding: ($padding * 3);
+          flex-wrap: wrap;
+          padding: 0rem;
+          background-color: #E9EDC9;
+                  .hijoServicios__foto {
+                    @extend .flex;
+                    flex-wrap: wrap;
+                    @include sizes(350px,300px);         
+                    border-color: #DBDBD1;
+                    }
+              }
+              .hijoServicios2{
+                    @extend .flex;
+                    margin-left: 1rem;
+                    margin-right: 1rem;          
+                            .section3--estilotextoYfoto{
+                              font-weight: 500;
+                              font-size: 2.2rem;
+                              padding: 2rem;
+                            }
+                            .section3__parrafos{
+                              text-align: center;
+                              display: block;
+                              font-size: 2rem;
+                              color: #041527;
+                              font-weight: 300;
+                              letter-spacing: 0.5px;
+                              line-height: 3rem;
+                              margin-block-start: 10px;
+                              margin-block-end: 10px;
+                              margin-inline-start: 0px;
+                              margin-inline-end: 0px;
+                              margin: 2rem;
+                            }
+                          }
+
     /* ESTILO INDEX BOOSTRAP */
     
     .nosotros{
@@ -1072,15 +1258,6 @@
         background-color:  #CCD5AE;
       }
     /* -------FLEX SOBRE FOOTER----- */
-    
-/*    .padreFlex2 {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      text-align: center;
-      list-style-type: none;
-    }  */
-    
 
     .footer--position{
         align-items: center;

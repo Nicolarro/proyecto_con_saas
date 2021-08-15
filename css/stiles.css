@@ -63,7 +63,7 @@ footer .footer__elementoFooter1 {
 /* SECCION CON CONDICIONAL */
 /* SECCION CON OPERADORES */
 /* VARIALBES*/
-.flex, .section3 .section3__padreMain1, .section3 .section3__padreMain1 .section3__hijoMain1, .section3 .section3__padreMain1 .section3--fotoJunta2, .section3 .section3__padreMain1 .section3--fotoJunta, .section3 .section3__padreMain1 .section3__hijoMain2, .section3 .section3__padreMain1 .section3--estilotextoYfoto, .containerFlex, .padreServicios, .hijoServicios, .hijoServicios .hijoServicios__foto, .hijoServicios2 {
+.flex, .section3 .section3__padreMain1, .section3 .section3__padreMain1 .section3__hijoMain1, .section3 .section3__padreMain1 .section3--fotoJunta2, .section3 .section3__padreMain1 .section3--fotoJunta, .section3 .section3__padreMain1 .section3__hijoMain2, .containerFlex, .padreServicios, .hijoServicios, .hijoServicios .hijoServicios__foto, .hijoServicios2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -103,13 +103,13 @@ footer .footer__elementoFooter1 {
   border-color: #d5d5d5;
 }
 
-.section3 .section3__padreMain1 .section3--estilotextoYfoto {
+.section3 .section3__padreMain1 .section3__hijoMain2 .section3--estilotextoYfoto {
   font-weight: 500;
   font-size: 2.2rem;
   padding: 2rem;
 }
 
-.section3 .section3__padreMain1 .section3__parrafos {
+.section3 .section3__padreMain1 .section3__hijoMain2 .section3__parrafos {
   text-align: center;
   display: block;
   font-size: 2rem;
@@ -404,7 +404,7 @@ dl dt {
   text-align: 1px;
 }
 
-/* -------MEDIA QUERY PARA EL INDEX- MOBILE FIRST------- */
+/* -------MEDIA QUERY PARA LA PAGINA- MOBILE FIRST------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   * {
@@ -1290,13 +1290,6 @@ dl dt {
     background-color: #CCD5AE;
   }
   /* -------FLEX SOBRE FOOTER----- */
-  /*    .padreFlex2 {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      text-align: center;
-      list-style-type: none;
-    }  */
   .footer--position {
     align-items: center;
     padding: 1rem -1;
