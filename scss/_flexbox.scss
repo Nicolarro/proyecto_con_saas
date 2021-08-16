@@ -31,20 +31,20 @@
 
                 .section3__hijoMain1 {
                   @extend .flex;
-                  flex-wrap: wrap;
+                  flex-shrink: 0;
                   background-color: #E9EDC9;
               }
                 .section3--fotoJunta2 {
                   @extend .flex;
                   flex-wrap: wrap;
-                  @include sizes(1000px,300px)
+                  @include sizes(400px,300px)
                 }
                 .section3--fotoJunta {
                   @extend .flex;
                   flex-wrap: wrap;
-                  @include sizes(600px,300px);
+                  @include sizes(400px,300px);
                 }
-                .section3__hijoMain2{ //-------SECCION CON CONDICIONAL---------//
+                .section3__hijoMain2{ 
                   @extend .flex;
 
                   @if $padding==1rem{

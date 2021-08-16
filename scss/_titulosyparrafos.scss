@@ -129,11 +129,31 @@ div{
     }
 
     /* ESTILO PREGUTNAS FRECUENTES */
-    dl dt {
-      color: #6b705c;
-      font-size: 2rem;
+    dl{
+      dt{
+        color: #6b705c;
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+      dd{
+        margin-left: 1rem;
+      }
     }
-    
+
+.fotoBocado{
+  @include sizes (400px,300px) 
+  }
+.fotoTarta{
+  @include sizes (400px,300px)
+}
+.fotoTorta{
+  @include sizes (400px,300px)
+}
+.fotoShot{
+  @include sizes (400px,300px)
+}
+
+
     .listaProductos {
       list-style-type: disc;
       list-style: inside;

@@ -12,25 +12,30 @@
           
   /* --------------FORMATO SOBRE FOOTER------------------------- */
 
-footer{     
 .footer--color {
-  background-color: $color1;
-/*   bottom: 0px; */
-  margin-top: 0.25rem;
+  background-color: #ccd5ae;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 0rem;
 }
+
+/* -------FLEX SOBRE FOOTER----- */
+
 .footer--position{
-  align-items: center !important;
-  padding: ($padding -1); //SECION CON OPERADOR//
-text-align: center ;
-justify-items: center;
-  }
-.footer__elementoFooter1 {
-  background-color: $color1;
-  color:rgba(0,0,0,.5) ;
+    align-items: center;
+    padding: ($padding -1);
+  text-align: center;
+  justify-items: end;
+    }
+
+.footer__elementoFooter {
+  color: #ccd5ae;
   font-size: 2.5rem;
   text-decoration: none;
-  text-align: center;
-  justify-content: center;
-} 
+  background-color: #ccd5ae;
 }

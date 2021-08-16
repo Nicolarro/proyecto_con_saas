@@ -37,27 +37,31 @@ body {
 /* VARIABLES */
 /* OPERADORES */
 /* --------------FORMATO SOBRE FOOTER------------------------- */
-footer .footer--color {
-  background-color: #CCD5AE;
-  /*   bottom: 0px; */
-  margin-top: 0.25rem;
+.footer--color {
+  background-color: #ccd5ae;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 0rem;
 }
 
-footer .footer--position {
-  align-items: center !important;
+/* -------FLEX SOBRE FOOTER----- */
+.footer--position {
+  align-items: center;
   padding: 1rem -1;
   text-align: center;
-  justify-items: center;
+  justify-items: end;
 }
 
-footer .footer__elementoFooter1 {
-  background-color: #CCD5AE;
-  color: rgba(0, 0, 0, 0.5);
+.footer__elementoFooter {
+  color: #ccd5ae;
   font-size: 2.5rem;
   text-decoration: none;
-  text-align: center;
-  justify-content: center;
+  background-color: #ccd5ae;
 }
 
 /* SECCION CON CONDICIONAL */
@@ -76,20 +80,20 @@ footer .footer__elementoFooter1 {
 }
 
 .section3 .section3__padreMain1 .section3__hijoMain1 {
-  flex-wrap: wrap;
+  flex-shrink: 0;
   background-color: #E9EDC9;
 }
 
 .section3 .section3__padreMain1 .section3--fotoJunta2 {
   flex-wrap: wrap;
   height: 300px;
-  width: 1000px;
+  width: 400px;
 }
 
 .section3 .section3__padreMain1 .section3--fotoJunta {
   flex-wrap: wrap;
   height: 300px;
-  width: 600px;
+  width: 400px;
 }
 
 .section3 .section3__padreMain1 .section3__hijoMain2 {
@@ -392,6 +396,31 @@ div .cursiva {
 dl dt {
   color: #6b705c;
   font-size: 2rem;
+  margin-left: 1rem;
+}
+
+dl dd {
+  margin-left: 1rem;
+}
+
+.fotoBocado {
+  height: 300px;
+  width: 400px;
+}
+
+.fotoTarta {
+  height: 300px;
+  width: 400px;
+}
+
+.fotoTorta {
+  height: 300px;
+  width: 400px;
+}
+
+.fotoShot {
+  height: 300px;
+  width: 400px;
 }
 
 .listaProductos {
@@ -405,8 +434,19 @@ dl dt {
 }
 
 /* -------MEDIA QUERY PARA LA PAGINA- MOBILE FIRST------- */
+/* .flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
   * {
     box-sizing: border-box;
     background-color: #ffffff;
@@ -511,19 +551,73 @@ dl dt {
   /* FLEX SOBRE SECTION 3 (INDEX) */
   .section3__padreMain1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: #E9EDC9;
   }
   .section3__hijoMain1 {
+    display: flex;
+    flex-direction: column;
     padding: 3rem;
     flex-wrap: wrap;
     background-color: #E9EDC9;
   }
   .section3__hijoMain2 {
+    display: flex;
+    flex-direction: column;
     padding: 3rem;
     flex-wrap: wrap;
     background-color: #E9EDC9;
+  }
+  .padreServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E9EDC9;
+  }
+  .hijoServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+    padding: 0rem;
+    background-color: #E9EDC9;
+  }
+  .hijoServicios .hijoServicios__foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 350px;
+    border-color: #DBDBD1;
+  }
+  .hijoServicios2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hijoServicios2 .section3--estilotextoYfoto {
+    font-weight: 500;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  .hijoServicios2 .section3__parrafos {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    color: #041527;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 2rem;
   }
   /* ESTILO INDEX BOOSTRAP */
   .nosotros {
@@ -558,7 +652,6 @@ dl dt {
   .containerflex__tituloBox {
     font-weight: bold;
     margin-top: 2rem;
-    /*   margin-bottom: 2rem; */
     font-size: 2rem;
     text-align: center;
     opacity: 1;
@@ -587,19 +680,19 @@ dl dt {
     border-color: #292929;
   }
   .section3--fotoJunta {
-    max-width: 100%;
-    width: 1200px;
-    height: 300px;
+    width: 150px;
+    height: auto;
+    max-width: 200px;
   }
   .section3--fotoJunta2 {
     max-width: 100%;
-    width: 200px;
-    height: 300px;
+    max-width: 200px;
+    height: auto;
   }
   .section3--fotoJunta3 {
     max-width: 100%;
-    width: 1200px;
-    height: 300px;
+    max-width: 600px;
+    height: auto;
   }
   /* IMAGENES  */
   img {
@@ -622,13 +715,13 @@ dl dt {
     margin-top: 0.25rem;
     margin-bottom: 0rem;
   }
+  /* -------FLEX SOBRE FOOTER----- */
   .footer--position {
     align-items: center;
     padding: 1rem -1;
     text-align: center;
     justify-items: end;
   }
-  /* -------FLEX SOBRE FOOTER----- */
   .footer__elementoFooter {
     color: #041527;
     font-size: 2.5rem;
@@ -641,7 +734,7 @@ dl dt {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   * {
     box-sizing: border-box;
     background-color: #ffffff;
@@ -760,6 +853,52 @@ dl dt {
     flex-wrap: wrap;
     background-color: #E9EDC9;
   }
+  .padreServicios {
+    display: flex;
+    flex-direction: column;
+    background-color: #E9EDC9;
+  }
+  .hijoServicios {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    flex-wrap: wrap;
+    padding: 0rem;
+    background-color: #E9EDC9;
+  }
+  .hijoServicios .hijoServicios__foto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 350px;
+    border-color: #DBDBD1;
+  }
+  .hijoServicios2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hijoServicios2 .section3--estilotextoYfoto {
+    font-weight: 500;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  .hijoServicios2 .section3__parrafos {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    color: #041527;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 2rem;
+  }
   /* ESTILO INDEX BOOSTRAP */
   .nosotros {
     height: 400px;
@@ -796,6 +935,20 @@ dl dt {
     font-size: 2rem;
     text-align: center;
     opacity: 1;
+  }
+  .section3--fotoJunta {
+    /*       max-width: 100%; */
+    width: 8000px;
+    height: 300px;
+  }
+  .section3--fotoJunta2 {
+    /*         max-width: 100%; */
+    width: 200px;
+    height: 300px;
+  }
+  .section3--fotoJunta3 {
+    width: 800px;
+    height: 300px;
   }
   /* -------FORMATO A PARRAFOS------- */
   .section3__parrafos {
@@ -848,6 +1001,18 @@ dl dt {
     margin-bottom: 0rem;
   }
   /* -------FLEX SOBRE FOOTER----- */
+  .footer--color {
+    background-color: #ccd5ae;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0rem;
+  }
+  /* -------FLEX SOBRE FOOTER----- */
   .footer--position {
     align-items: center;
     padding: 1rem -1;
@@ -866,7 +1031,7 @@ dl dt {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   * {
     box-sizing: border-box;
     background-color: #ffffff;
@@ -985,6 +1150,52 @@ dl dt {
     flex-wrap: wrap;
     background-color: #E9EDC9;
   }
+  .padreServicios {
+    display: flex;
+    flex-direction: column;
+    background-color: #E9EDC9;
+  }
+  .hijoServicios {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    flex-wrap: wrap;
+    padding: 0rem;
+    background-color: #E9EDC9;
+  }
+  .hijoServicios .hijoServicios__foto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 350px;
+    border-color: #DBDBD1;
+  }
+  .hijoServicios2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hijoServicios2 .section3--estilotextoYfoto {
+    font-weight: 500;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  .hijoServicios2 .section3__parrafos {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    color: #041527;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 2rem;
+  }
   /* ESTILO INDEX BOOSTRAP */
   .nosotros {
     height: 400px;
@@ -1045,12 +1256,12 @@ dl dt {
     border-width: thin;
     border-color: #292929;
   }
-  .section3--fotoJunta {
-    display: inline-block;
-    max-width: 100%;
-    width: 1200px;
-    height: 300px;
-  }
+  /*     .section3--fotoJunta {
+      display: inline-block;
+      width: 1200px;
+      height: 300px;
+    }
+     */
   /* IMAGENES  */
   img {
     border-style: solid;
@@ -1209,6 +1420,52 @@ dl dt {
     padding: 3rem;
     flex-wrap: wrap;
     background-color: #E9EDC9;
+  }
+  .padreServicios {
+    display: flex;
+    flex-direction: row;
+    background-color: #E9EDC9;
+  }
+  .hijoServicios {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    flex-wrap: wrap;
+    padding: 0rem;
+    background-color: #E9EDC9;
+  }
+  .hijoServicios .hijoServicios__foto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 350px;
+    border-color: #DBDBD1;
+  }
+  .hijoServicios2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hijoServicios2 .section3--estilotextoYfoto {
+    font-weight: 500;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  .hijoServicios2 .section3__parrafos {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    color: #041527;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 2rem;
   }
   /* ESTILO INDEX BOOSTRAP */
   .nosotros {
