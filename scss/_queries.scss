@@ -355,7 +355,22 @@ $color1:#CCD5AE ;
     border-style: none;
   }
   
-  
+  .contenedor_video {
+    position: relative;
+    padding-bottom: 56.25%; /*panorámico*/
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+
+  .contenedor_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  }
+
   /* --------------FORMATO SOBRE FOOTER------------------------- */
   .footer--color {
     background-color: #ccd5ae;
@@ -391,10 +406,6 @@ $color1:#CCD5AE ;
   .section3--letraCapit {
     text-transform: capitalize;
   }
-
-
-
-
 
 }
 
@@ -745,6 +756,21 @@ $color1:#CCD5AE ;
       border-style: none;
     }
     
+    .contenedor_video {
+      position: relative;
+      padding-bottom: 56.25%; /*panorámico*/
+      padding-top: 25px;
+      height: 0;
+      overflow: hidden;
+  
+    .contenedor_video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    }
     
     /* --------------FORMATO SOBRE FOOTER------------------------- */
     .footer--color {
@@ -1113,7 +1139,23 @@ $color1:#CCD5AE ;
       height: 300px;
     }
     
-        
+    .contenedor_video {
+      position: relative;
+      padding-bottom: 56.25%; /*panorámico*/
+      padding-top: 25px;
+      height: 0;
+      overflow: hidden;
+  
+    .contenedor_video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    }
+    
+
     /* IMAGENES  */
     img {
       border-style: solid;
@@ -1506,6 +1548,21 @@ $color1:#CCD5AE ;
       border-style: none;
     }
     
+   .contenedor_video {
+      position: relative;
+      padding-bottom: 25%; 
+      padding-top: 2rem;
+      height: 0;
+  
+    .contenedor_video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    } 
+
     
     /* --------------FORMATO SOBRE FOOTER------------------------- */
     .footer--color {
@@ -1871,6 +1928,21 @@ $color1:#CCD5AE ;
       border-style: none;
     }
     
+    .contenedor_video {
+      position: relative;
+      padding-bottom: 25%; 
+      padding-top: 2rem;
+      height: 0;
+  
+    .contenedor_video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    } 
+
     
     /* --------------FORMATO SOBRE FOOTER------------------------- */
     .footer--color {
