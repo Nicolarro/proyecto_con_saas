@@ -10,17 +10,394 @@ $margin: 1rem;
 
 $color1:#CCD5AE ;
 
-/* .flex{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+
+
+@media (max-width: 575px){
+
+  * {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 2rem;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #041527;
+  }
+  
+  .header--color {
+    background-color:  #CCD5AE;
+  }
+  
+  /* FORMATO ENCABEZADO PRINCIPAL */
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    align-items: center;
+    opacity: 1;
+  }
+  
+  .portada__insignia {
+    
+    font-family: "Pinyon Script", cursive;
+    font-size: 5rem;
+    color: #c59d5f;
+    background-color: transparent;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    opacity: 2;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    animation-duration: 4s;
+    animation-name: aparecer;
+  }
+  
+  /* TRANSICION SOBRE INSIGNIA */
+  
+  .mainTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    opacity: 1;
+    background: transparent;
+    display: block;
+  }
+  
+  /* TRANSLATE SOBRE SOLOINDEX */
+  
+  .header__logo {
+    border-style: none;
+    flex-grow: 0;
+    margin-left: 1rem;
+  }
+  
+  /* TITULOS EN LAS SECTIONS E INDEX */
+  .h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 1
+  }
+  
+  /* ANIMACION SOBRE H2 */
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .h3 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .h4{
+    text-align: left;
+    margin-left: 3rem;
+  }
+  .cursiva {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.5px;
+    font-weight: 900;
+    color: #041527;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 1;
+  }
+  
+  /* FORMATO SOBRE LAS LISTAS DE NAVEGACION  */
+  
+  /* FLEX SOBRE SECTION 2 (INDEX) */
+  
+  .portada{
+    display: flex;
+    width:100%;
+    height: 400px;
+    background-image: url(../images/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* FLEX SOBRE SECTION 3 (INDEX) */
+  .section3{
+  .section3__padreMain1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E9EDC9;
+  }
+  
+  .section3__hijoMain1 {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    flex-wrap: wrap;
+    background-color: #E9EDC9;
+  }
+  
+  .section3__hijoMain2{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    flex-wrap: wrap;
+    background-color: #E9EDC9;
+  }
+ }
+
+  .padreServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        background-color: #E9EDC9;
+     
+      .hijoServicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: ($padding * 3);
+        flex-wrap: wrap;
+        padding: 0rem;
+        background-color: #E9EDC9;
+                .hijoServicios__foto {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  flex-wrap: wrap;
+                  @include sizes(350px,300px);         
+                  border-color: #DBDBD1;
+                  }
+            }
+            .hijoServicios2{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+                  margin-left: 1rem;
+                  margin-right: 1rem;          
+                          .section3--estilotextoYfoto{
+                            font-weight: 500;
+                            font-size: 2.2rem;
+                            padding: 2rem;
+                          }
+                          .section3__parrafos{
+                            text-align: center;
+                            display: block;
+                            font-size: 2rem;
+                            color: #041527;
+                            font-weight: 300;
+                            letter-spacing: 0.5px;
+                            line-height: 3rem;
+                            margin-block-start: 10px;
+                            margin-block-end: 10px;
+                            margin-inline-start: 0px;
+                            margin-inline-end: 0px;
+                            margin: 2rem;
+                          }
+                        }
+                      }
+
+                        .fondoProductos{
+                          display: flex;
+                          flex-direction: column;
+                          @include sizes(100%,400px);
+                          background-image: url(../images/fondoProductos.png);
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          justify-content: center;
+                          align-items: center;
+                            .fondoProductos_texto{
+                                font-family: "Pinyon Script",;
+                                font-size: 3rem;
+                                 color: #c59d5f;
+                                background-color: transparent;
+                                line-height: 26px;
+                                font-weight: 300;
+                                text-transform: capitalize;
+                                text-align: center;
+                                opacity: 10;
+                                display: block;
+                                margin-top: 2rem;
+                                margin-bottom: 14rem;
+                              }
+                              .btnProducto{
+                                color: #212529;
+                                background-color: #c59d5f ;
+                                border-color: #c59d5f ;
+                                font-size: 2rem;
+                                justify-content: center;
+                    
+                              }
+                            }
+                            .btnFormulario{
+                              background-color: $color1;
+                            }
+                          
+                            .btnCards{
+                              align-items: center;
+                              border-color:#c59d5f ;
+                              background-color:#c59d5f  ;
+                          
+                            }
+  /* ESTILO INDEX BOOSTRAP */
+  
+  .nosotros{
+    height: 400px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+  }
+  /* ESTILO INDEX CAROUSEL */
+  
+  .carousel{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  } 
+  
+  .carousel--Tamano{
+    width: 100%;
+    height: 450px;
+  }
+  
+  
+  /* FLEX SOBRE SECTION 4 (INDEX)*/
+  
+  .containerFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  .containerflex--estilocaja{
+    border-style: solid;
+    border-width: thin;
+    border-color: #c59d5f;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .containerflex__tituloBox{
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 1;
+  }
+  
+  /* -------FORMATO A PARRAFOS------- */
+  
+  .section3__parrafos {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    color: #041527;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 2rem;
+  }
+  
+  .section3--estilotextoYfoto {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 2rem;
+    border-style: solid;
+    border-width: thin;
+    border-color: #292929;
+    
+  }
+  
+ .section3--fotoJunta {
+    width: 150px;
+    height: auto;
+    max-width: 200px;
+  }
+  
+
+  .section3--fotoJunta2 {
+      max-width: 100%;
+      max-width: 200px;
+      height: auto;
+    }
+
+    .section3--fotoJunta3 {
+      max-width: 100%;
+      max-width: 600px;
+      height: auto;}
+
+      /* IMAGENES  */
+  img {
+    border-style: solid;
+    border-width: thin;
+    border-color: #DBDBD1;
+  }
+  
+  .logoRedes {
+    border-style: none;
+  }
+  
+  
+  /* --------------FORMATO SOBRE FOOTER------------------------- */
+  .footer--color {
+    background-color: #ccd5ae;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0rem;
+  }
+  
+  /* -------FLEX SOBRE FOOTER----- */
+
+
+  .footer--position{
+      align-items: center;
+      padding: ($padding -1);
+    text-align: center;
+    justify-items: end;
+      }
+
+  .footer__elementoFooter {
+    color: #041527;
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+  
+  
+  /* -----------------------ESTILOS INDEX------------------------------- */
+  
+  .section3--letraCapit {
+    text-transform: capitalize;
+  }
+
+
+
+
+
 }
 
-.flexColumn{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -144,6 +521,7 @@ $color1:#CCD5AE ;
     }
     
     /* FLEX SOBRE SECTION 3 (INDEX) */
+    .section3{
     .section3__padreMain1 {
       display: flex;
       flex-direction: column;
@@ -166,7 +544,7 @@ $color1:#CCD5AE ;
       flex-wrap: wrap;
       background-color: #E9EDC9;
     }
-
+   }
   
 
     .padreServicios {
@@ -174,7 +552,7 @@ $color1:#CCD5AE ;
       flex-direction: column;
       align-items: center;
           background-color: #E9EDC9;
-        }
+       
         .hijoServicios {
           display: flex;
           flex-direction: column;
@@ -218,6 +596,7 @@ $color1:#CCD5AE ;
                               margin: 2rem;
                             }
                           }
+                        }
 
                           .fondoProductos{
                             display: flex;
@@ -922,6 +1301,7 @@ $color1:#CCD5AE ;
     }
     
     /* FLEX SOBRE SECTION 3 (INDEX) */
+    .section3{
     .section3__padreMain1 {
       display: flex;
       flex-direction: row;
@@ -940,6 +1320,7 @@ $color1:#CCD5AE ;
       flex-wrap: wrap;
       background-color: #E9EDC9;
     }
+  }
 
     .padreServicios {
       display: flex;
