@@ -53,7 +53,7 @@ $margin: 1rem;
     justify-content: center;
     align-items: center;
       .portada__insignia{
-          font-family: "Pinyon Script", cursive;
+          font-family: "Pinyon Script", "cursive";
           font-size: 7rem;
           color: #c59d5f;
           background-color: transparent;
@@ -109,7 +109,11 @@ $margin: 1rem;
         margin-left: 3rem;
       }
 
-  
+      .h5{
+        font-size: 1.5rem;
+        opacity: 2;
+        font-weight: 400;
+      }
 
 
 div{
@@ -140,6 +144,41 @@ div{
         margin-left: 1rem;
       }
     }
+
+    .fondoProductos{
+      display: flex;
+      flex-direction: column;
+      @include sizes(100%,400px);
+      background-image: url(../images/fondoProductos.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+        .fondoProductos_texto{
+            font-family: "Pinyon Script",;
+            font-size: 5rem;
+             color: #c59d5f;
+            background-color: transparent;
+            line-height: 26px;
+            font-weight: 300;
+            text-transform: capitalize;
+            text-align: center;
+            opacity: 10;
+            display: block;
+            margin-top: 2rem;
+            margin-bottom: 14rem;
+          }
+          .btnProducto{
+            color: #212529;
+            background-color: #c59d5f ;
+            border-color: #c59d5f ;
+            font-size: 2rem;
+            justify-content: center;
+
+          }
+        }
+
+
 
 .fotoBocado{
   @include sizes (400px,300px) 

@@ -24,8 +24,15 @@
           
 
         /* ESTILO SOBRE FORM - BOTON BOOSTRAP */
-.btn{
-    background-color: $color1
+.btnFormulario{
+    background-color: $color1;
+  }
+
+  .btnCards{
+    align-items: center;
+    border-color:#c59d5f ;
+    background-color:#c59d5f  ;
+
   }
   
   /* ------------ESTILOS CONTACTO------------------------------------- */
