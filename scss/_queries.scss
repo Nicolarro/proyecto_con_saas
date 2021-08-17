@@ -8,6 +8,8 @@ $margin: 1rem;
   width: $width;
 }
 
+$color1:#CCD5AE ;
+
 /* .flex{
   display: flex;
   flex-direction: row;
@@ -217,8 +219,50 @@ $margin: 1rem;
                             }
                           }
 
+                          .fondoProductos{
+                            display: flex;
+                            flex-direction: column;
+                            @include sizes(100%,400px);
+                            background-image: url(../images/fondoProductos.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            justify-content: center;
+                            align-items: center;
+                              .fondoProductos_texto{
+                                  font-family: "Pinyon Script",;
+                                  font-size: 5rem;
+                                   color: #c59d5f;
+                                  background-color: transparent;
+                                  line-height: 26px;
+                                  font-weight: 300;
+                                  text-transform: capitalize;
+                                  text-align: center;
+                                  opacity: 10;
+                                  display: block;
+                                  margin-top: 2rem;
+                                  margin-bottom: 14rem;
+                                }
+                                .btnProducto{
+                                  color: #212529;
+                                  background-color: #c59d5f ;
+                                  border-color: #c59d5f ;
+                                  font-size: 2rem;
+                                  justify-content: center;
+                      
+                                }
+                              }
 
 
+                              .btnFormulario{
+                                background-color: $color1;
+                              }
+                            
+                              .btnCards{
+                                align-items: center;
+                                border-color:#c59d5f ;
+                                background-color:#c59d5f  ;
+                            
+                              }
     /* ESTILO INDEX BOOSTRAP */
     
     .nosotros{
@@ -547,6 +591,50 @@ $margin: 1rem;
                             }
                           }
     
+                          .fondoProductos{
+                            display: flex;
+                            flex-direction: column;
+                            @include sizes(100%,400px);
+                            background-image: url(../images/fondoProductos.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            justify-content: center;
+                            align-items: center;
+                              .fondoProductos_texto{
+                                  font-family: "Pinyon Script",;
+                                  font-size: 5rem;
+                                   color: #c59d5f;
+                                  background-color: transparent;
+                                  line-height: 26px;
+                                  font-weight: 300;
+                                  text-transform: capitalize;
+                                  text-align: center;
+                                  opacity: 10;
+                                  display: block;
+                                  margin-top: 2rem;
+                                  margin-bottom: 14rem;
+                                }
+                                .btnProducto{
+                                  color: #212529;
+                                  background-color: #c59d5f ;
+                                  border-color: #c59d5f ;
+                                  font-size: 2rem;
+                                  justify-content: center;
+                      
+                                }
+                              }
+                              .btnFormulario{
+                                background-color: $color1;
+                              }
+                            
+                              .btnCards{
+                                align-items: center;
+                                border-color:#c59d5f ;
+                                background-color:#c59d5f  ;
+                            
+                              }
+
+
     /* ESTILO INDEX BOOSTRAP */
     
     .nosotros{
@@ -899,6 +987,52 @@ $margin: 1rem;
                             }
                           }
     
+                          .fondoProductos{
+                            display: flex;
+                            flex-direction: column;
+                            @include sizes(100%,400px);
+                            background-image: url(../images/fondoProductos.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            justify-content: center;
+                            align-items: center;
+                              .fondoProductos_texto{
+                                  font-family: "Pinyon Script",;
+                                  font-size: 5rem;
+                                   color: #c59d5f;
+                                  background-color: transparent;
+                                  line-height: 26px;
+                                  font-weight: 300;
+                                  text-transform: capitalize;
+                                  text-align: center;
+                                  opacity: 10;
+                                  display: block;
+                                  margin-top: 2rem;
+                                  margin-bottom: 14rem;
+                                }
+                                .btnProducto{
+                                  color: #212529;
+                                  background-color: #c59d5f ;
+                                  border-color: #c59d5f ;
+                                  font-size: 2rem;
+                                  justify-content: center;
+                      
+                                }
+                              }
+
+                              .btnFormulario{
+                                background-color: $color1;
+                              }
+                            
+                              .btnCards{
+                                align-items: center;
+                                border-color:#c59d5f ;
+                                background-color:#c59d5f  ;
+                            
+                              }
+
+
+
     /* ESTILO INDEX BOOSTRAP */
     
     .nosotros{
@@ -1217,6 +1351,52 @@ $margin: 1rem;
                               margin: 2rem;
                             }
                           }
+
+                          .fondoProductos{
+                            display: flex;
+                            flex-direction: column;
+                            @include sizes(100%,400px);
+                            background-image: url(../images/fondoProductos.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            justify-content: center;
+                            align-items: center;
+                              .fondoProductos_texto{
+                                  font-family: "Pinyon Script",;
+                                  font-size: 5rem;
+                                   color: #c59d5f;
+                                  background-color: transparent;
+                                  line-height: 26px;
+                                  font-weight: 300;
+                                  text-transform: capitalize;
+                                  text-align: center;
+                                  opacity: 10;
+                                  display: block;
+                                  margin-top: 2rem;
+                                  margin-bottom: 14rem;
+                                }
+                                .btnProducto{
+                                  color: #212529;
+                                  background-color: #c59d5f ;
+                                  border-color: #c59d5f ;
+                                  font-size: 2rem;
+                                  justify-content: center;
+                      
+                                }
+                              }
+
+
+                              .btnFormulario{
+                                background-color: $color1;
+                              }
+                            
+                              .btnCards{
+                                align-items: center;
+                                border-color:#c59d5f ;
+                                background-color:#c59d5f  ;
+                            
+                              }
+                              
 
     /* ESTILO INDEX BOOSTRAP */
     
