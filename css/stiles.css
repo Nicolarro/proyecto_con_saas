@@ -275,10 +275,6 @@ body {
   grid-area: imagen1;
 }
 
-.contenedorGaleria .imagen1:hover {
-  background-color: #E9EDC9;
-}
-
 .contenedorGaleria .imagen2 {
   grid-area: imagen2;
 }
@@ -524,7 +520,7 @@ dl dd {
   }
   .portada__insignia {
     font-family: "Pinyon Script", cursive;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
@@ -685,7 +681,7 @@ dl dd {
   }
   .fondoProductos .fondoProductos_texto {
     font-family: "Pinyon Script";
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
@@ -772,6 +768,55 @@ dl dd {
     border-width: thin;
     border-color: #292929;
   }
+  .contenedorGaleria {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: "titulo imagen1" "texto imagen2" "texto imagen3" "texto imagen4";
+    background-color: #E9EDC9;
+    border-width: 0.1;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-top: 5rem;
+  }
+  .contenedorGaleria .tituloGrilla {
+    grid-area: titulo;
+    align-self: end;
+    background-color: #E9EDC9;
+    text-align: center;
+  }
+  .contenedorGaleria .textoGrilla {
+    grid-area: texto;
+    align-self: auto;
+    justify-self: center;
+    text-align: center;
+    text-shadow: #292929;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    background-color: #E9EDC9;
+  }
+  .contenedorGaleria .imagen1 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen1;
+  }
+  .contenedorGaleria .imagen2 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen2;
+  }
+  .contenedorGaleria .imagen3 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen3;
+  }
+  .contenedorGaleria .imagen4 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen4;
+  }
   .section3--fotoJunta {
     width: 150px;
     height: auto;
@@ -784,7 +829,7 @@ dl dd {
   }
   .section3--fotoJunta3 {
     max-width: 100%;
-    max-width: 600px;
+    max-width: 200px;
     height: auto;
   }
   /* IMAGENES  */
@@ -867,7 +912,7 @@ dl dd {
   }
   .portada__insignia {
     font-family: "Pinyon Script", cursive;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
@@ -1028,7 +1073,7 @@ dl dd {
   }
   .fondoProductos .fondoProductos_texto {
     font-family: "Pinyon Script";
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
@@ -1127,8 +1172,57 @@ dl dd {
   }
   .section3--fotoJunta3 {
     max-width: 100%;
-    max-width: 600px;
+    max-width: 226px;
     height: auto;
+  }
+  .contenedorGaleria {
+    display: grid;
+    grid-template-columns: 280px 300px;
+    grid-template-rows: repeat(4, 226px);
+    grid-template-areas: "titulo imagen1" "texto imagen2" "texto imagen3" "texto imagen4";
+    background-color: #E9EDC9;
+    border-width: 0.1;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-top: 5rem;
+  }
+  .contenedorGaleria .tituloGrilla {
+    grid-area: titulo;
+    align-self: end;
+    background-color: #E9EDC9;
+    text-align: center;
+  }
+  .contenedorGaleria .textoGrilla {
+    grid-area: texto;
+    align-self: auto;
+    justify-self: center;
+    text-align: center;
+    text-shadow: #292929;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    background-color: #E9EDC9;
+  }
+  .contenedorGaleria .imagen1 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen1;
+  }
+  .contenedorGaleria .imagen2 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen2;
+  }
+  .contenedorGaleria .imagen3 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen3;
+  }
+  .contenedorGaleria .imagen4 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen4;
   }
   /* IMAGENES  */
   img {
@@ -1363,7 +1457,7 @@ dl dd {
   }
   .fondoProductos .fondoProductos_texto {
     font-family: "Pinyon Script";
-    font-size: 5rem;
+    font-size: 3rem;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
@@ -1429,7 +1523,7 @@ dl dd {
   }
   .section3--fotoJunta {
     /*       max-width: 100%; */
-    width: 8000px;
+    width: 800px;
     height: 300px;
   }
   .section3--fotoJunta2 {
@@ -1438,8 +1532,57 @@ dl dd {
     height: 300px;
   }
   .section3--fotoJunta3 {
-    width: 800px;
+    width: 300px;
     height: 300px;
+  }
+  .contenedorGaleria {
+    display: grid;
+    grid-template-columns: 200px 300px 300px;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "titulo imagen1 imagen2" "texto imagen3 imagen4";
+    background-color: #E9EDC9;
+    border-width: 0.1;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-top: 5rem;
+  }
+  .contenedorGaleria .tituloGrilla {
+    grid-area: titulo;
+    align-self: end;
+    background-color: #E9EDC9;
+    text-align: center;
+  }
+  .contenedorGaleria .textoGrilla {
+    grid-area: texto;
+    align-self: auto;
+    justify-self: center;
+    text-align: center;
+    text-shadow: #292929;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    background-color: #E9EDC9;
+  }
+  .contenedorGaleria .imagen1 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen1;
+  }
+  .contenedorGaleria .imagen2 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen2;
+  }
+  .contenedorGaleria .imagen3 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen3;
+  }
+  .contenedorGaleria .imagen4 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen4;
   }
   /* -------FORMATO A PARRAFOS------- */
   .section3__parrafos {
@@ -1808,6 +1951,59 @@ dl dd {
       height: 300px;
     }
      */
+  .contenedorGaleria {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "titulo imagen1 imagen2" "texto imagen3 imagen4";
+    background-color: #E9EDC9;
+    border-width: 0.1;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-top: 5rem;
+  }
+  .contenedorGaleria .tituloGrilla {
+    grid-area: titulo;
+    align-self: end;
+    background-color: #E9EDC9;
+    text-align: center;
+  }
+  .contenedorGaleria .textoGrilla {
+    grid-area: texto;
+    align-self: auto;
+    justify-self: center;
+    text-align: center;
+    text-shadow: #292929;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    background-color: #E9EDC9;
+  }
+  .contenedorGaleria .imagen1 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen1;
+  }
+  .contenedorGaleria .imagen2 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen2;
+  }
+  .contenedorGaleria .imagen3 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen3;
+  }
+  .contenedorGaleria .imagen4 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen4;
+  }
+  .section3--fotoJunta3 {
+    width: 300px;
+    height: 300px;
+  }
   /* IMAGENES  */
   img {
     border-style: solid;

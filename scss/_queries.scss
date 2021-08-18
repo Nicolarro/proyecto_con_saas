@@ -44,7 +44,7 @@ $color1:#CCD5AE ;
   .portada__insignia {
     
     font-family: "Pinyon Script", cursive;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
@@ -221,7 +221,7 @@ $color1:#CCD5AE ;
                           align-items: center;
                             .fondoProductos_texto{
                                 font-family: "Pinyon Script",;
-                                font-size: 3rem;
+                                font-size: 2.5rem;
                                  color: #c59d5f;
                                 background-color: transparent;
                                 line-height: 26px;
@@ -326,6 +326,68 @@ $color1:#CCD5AE ;
     
   }
   
+  .contenedorGaleria {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas:
+    "titulo imagen1"
+    "texto imagen2"
+    "texto imagen3"
+    "texto imagen4";
+    background-color: #E9EDC9;
+    border-width: 0.1;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-top: 5rem ;
+
+  .tituloGrilla {
+    grid-area: titulo;
+    align-self: end;
+    background-color: #E9EDC9;
+    text-align: center;
+  }
+  
+  .textoGrilla {
+    grid-area: texto;
+    align-self: auto;
+    justify-self: center;
+    text-align: center;
+    text-shadow: #292929;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    background-color: #E9EDC9;
+  }
+  
+  .imagen1 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen1;
+  }
+  
+
+  .imagen2 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen2;
+  }
+  
+  .imagen3 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen3;
+
+  }
+  
+  .imagen4 {
+    margin: 0px;
+    justify-self: center;
+    grid-area: imagen4;
+  }
+}
+
  .section3--fotoJunta {
     width: 150px;
     height: auto;
@@ -341,7 +403,7 @@ $color1:#CCD5AE ;
 
     .section3--fotoJunta3 {
       max-width: 100%;
-      max-width: 600px;
+      max-width: 200px;
       height: auto;}
 
       /* IMAGENES  */
@@ -442,7 +504,7 @@ $color1:#CCD5AE ;
     .portada__insignia {
       
       font-family: "Pinyon Script", cursive;
-      font-size: 5rem;
+      font-size: 3rem;
       color: #c59d5f;
       background-color: transparent;
       line-height: 26px;
@@ -620,7 +682,7 @@ $color1:#CCD5AE ;
                             align-items: center;
                               .fondoProductos_texto{
                                   font-family: "Pinyon Script",;
-                                  font-size: 5rem;
+                                  font-size: 2.5rem;
                                    color: #c59d5f;
                                   background-color: transparent;
                                   line-height: 26px;
@@ -742,8 +804,73 @@ $color1:#CCD5AE ;
 
       .section3--fotoJunta3 {
         max-width: 100%;
-        max-width: 600px;
+        max-width: 226px;
         height: auto;}
+
+        .contenedorGaleria {
+          display: grid;
+          grid-template-columns: 280px 300px;
+          grid-template-rows: repeat(4, 226px);
+          grid-template-areas:
+          "titulo imagen1"
+          "texto imagen2"
+          "texto imagen3"
+          "texto imagen4";
+          background-color: #E9EDC9;
+          border-width: 0.1;
+          justify-items: stretch;
+          align-items: stretch;
+          margin-top: 5rem ;
+      
+        .tituloGrilla {
+          grid-area: titulo;
+          align-self: end;
+          background-color: #E9EDC9;
+          text-align: center;
+        }
+        
+        .textoGrilla {
+          grid-area: texto;
+          align-self: auto;
+          justify-self: center;
+          text-align: center;
+          text-shadow: #292929;
+          font-size: 2rem;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          line-height: 3rem;
+          background-color: #E9EDC9;
+        }
+        
+        .imagen1 {
+          margin: 0px;
+          justify-self: center;
+          grid-area: imagen1;
+        }
+        
+      
+        .imagen2 {
+          margin: 0px;
+          justify-self: center;
+          grid-area: imagen2;
+        }
+        
+        .imagen3 {
+          margin: 0px;
+          justify-self: center;
+          grid-area: imagen3;
+      
+        }
+        
+        .imagen4 {
+          margin: 0px;
+          justify-self: center;
+          grid-area: imagen4;
+        }
+      }
+
+
+
 
         /* IMAGENES  */
     img {
@@ -1007,7 +1134,7 @@ $color1:#CCD5AE ;
                             align-items: center;
                               .fondoProductos_texto{
                                   font-family: "Pinyon Script",;
-                                  font-size: 5rem;
+                                  font-size: 3rem;
                                    color: #c59d5f;
                                   background-color: transparent;
                                   line-height: 26px;
@@ -1089,7 +1216,7 @@ $color1:#CCD5AE ;
     
     .section3--fotoJunta {
       /*       max-width: 100%; */
-            width: 8000px;
+            width: 800px;
             height: 300px;
           }
           
@@ -1101,9 +1228,72 @@ $color1:#CCD5AE ;
             }
       
             .section3--fotoJunta3 {
-              width: 800px;
+              width: 300px;
               height: 300px;
             }
+
+            .contenedorGaleria {
+              display: grid;
+              grid-template-columns: 200px 300px 300px; 
+              grid-template-rows: repeat(2, 300px);
+              grid-template-areas:
+              "titulo imagen1 imagen2"
+              "texto imagen3 imagen4"
+/*               "texto imagen3"
+              "texto imagen4"; */;
+              background-color: #E9EDC9;
+              border-width: 0.1;
+              justify-items: stretch;
+              align-items: stretch;
+              margin-top: 5rem ;
+          
+            .tituloGrilla {
+              grid-area: titulo;
+              align-self: end;
+              background-color: #E9EDC9;
+              text-align: center;
+            }
+            
+            .textoGrilla {
+              grid-area: texto;
+              align-self: auto;
+              justify-self: center;
+              text-align: center;
+              text-shadow: #292929;
+              font-size: 2rem;
+              font-weight: 500;
+              letter-spacing: 0.5px;
+              line-height: 3rem;
+              background-color: #E9EDC9;
+            }
+            
+            .imagen1 {
+              margin: 0px;
+              justify-self: center;
+              grid-area: imagen1;
+            }
+            
+          
+            .imagen2 {
+              margin: 0px;
+              justify-self: center;
+              grid-area: imagen2;
+            }
+            
+            .imagen3 {
+              margin: 0px;
+              justify-self: center;
+              grid-area: imagen3;
+          
+            }
+            
+            .imagen4 {
+              margin: 0px;
+              justify-self: center;
+              grid-area: imagen4;
+            }
+          }
+
 
     /* -------FORMATO A PARRAFOS------- */
     
@@ -1537,6 +1727,71 @@ $color1:#CCD5AE ;
     }
      */
 
+     .contenedorGaleria {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: repeat(2, 300px);
+      grid-template-areas:
+      "titulo imagen1 imagen2"
+      "texto imagen3 imagen4";
+      background-color: #E9EDC9;
+      border-width: 0.1;
+      justify-items: stretch;
+      align-items: stretch;
+      margin-top: 5rem ;
+  
+    .tituloGrilla {
+      grid-area: titulo;
+      align-self: end;
+      background-color: #E9EDC9;
+      text-align: center;
+    }
+    
+    .textoGrilla {
+      grid-area: texto;
+      align-self: auto;
+      justify-self: center;
+      text-align: center;
+      text-shadow: #292929;
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      line-height: 3rem;
+      background-color: #E9EDC9;
+    }
+
+    .imagen1 {
+      margin: 0px;
+      justify-self: center;
+      grid-area: imagen1;
+    }
+    
+  
+    .imagen2 {
+      margin: 0px;
+      justify-self: center;
+      grid-area: imagen2;
+    }
+    
+    .imagen3 {
+      margin: 0px;
+      justify-self: center;
+      grid-area: imagen3;
+  
+    }
+    
+    .imagen4 {
+      margin: 0px;
+      justify-self: center;
+      grid-area: imagen4;
+    }
+  }
+
+  .section3--fotoJunta3 {
+    width: 300px;
+    height: 300px;
+  }
+
     /* IMAGENES  */
     img {
       border-style: solid;
@@ -1673,7 +1928,7 @@ $color1:#CCD5AE ;
       margin-bottom: 2rem;
       font-size: 3rem;
       text-align: center;
-      opacity: 1
+      opacity: 1;
     }
     
     /* ANIMACION SOBRE H2 */
@@ -1971,7 +2226,4 @@ $color1:#CCD5AE ;
       text-transform: capitalize;
     }
     
-    
   }
-
-  
