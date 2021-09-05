@@ -111,6 +111,7 @@
 .padreServicios {
   @extend .flex;
     background-color: #E9EDC9;
+    margin-bottom: 1rem;
   }
   .hijoServicios {
     @extend .flex;
@@ -127,8 +128,12 @@
         }
         .hijoServicios2{
               @extend .flex;
-              margin-left: 1rem;
-              margin-right: 1rem;          
+              margin-left: 2rem;
+              margin-right: 2rem; 
+              background-color: #E9EDC9;
+              border-style: solid;
+              border-width: thin;
+              border-color: #d5d5d5;     
                       .section3--estilotextoYfoto{
                         font-weight: 500;
                         font-size: 2.2rem;
