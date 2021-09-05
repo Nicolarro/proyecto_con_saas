@@ -1818,13 +1818,22 @@ $color1:#CCD5AE ;
       grid-area: imagen1;
     }
     
-  
+    .imagen1:hover{
+      transform: scale(1.2);
+      z-index: 3;
+    }
+
     .imagen2 {
       margin: 0px;
       justify-self: center;
       grid-area: imagen2;
     }
     
+    .imagen2:hover{
+      transform: scale(1.2);
+      z-index: 3;
+    }
+
     .imagen3 {
       margin: 0px;
       justify-self: center;
@@ -1832,11 +1841,22 @@ $color1:#CCD5AE ;
   
     }
     
+    .imagen3:hover{
+      transform: scale(1.2);
+      z-index: 2;
+    }
+
     .imagen4 {
       margin: 0px;
       justify-self: center;
       grid-area: imagen4;
     }
+  
+  .imagen4:hover{
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
   }
 
   .section3--fotoJunta3 {

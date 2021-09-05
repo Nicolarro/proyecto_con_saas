@@ -2084,20 +2084,36 @@ dl dd {
     justify-self: center;
     grid-area: imagen1;
   }
+  .contenedorGaleria .imagen1:hover {
+    transform: scale(1.2);
+    z-index: 3;
+  }
   .contenedorGaleria .imagen2 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen2;
+  }
+  .contenedorGaleria .imagen2:hover {
+    transform: scale(1.2);
+    z-index: 3;
   }
   .contenedorGaleria .imagen3 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen3;
   }
+  .contenedorGaleria .imagen3:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
   .contenedorGaleria .imagen4 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen4;
+  }
+  .contenedorGaleria .imagen4:hover {
+    transform: scale(1.2);
+    z-index: 2;
   }
   .section3--fotoJunta3 {
     max-width: 100%;
