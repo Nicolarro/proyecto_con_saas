@@ -44,7 +44,7 @@ $color1:#CCD5AE ;
   .portada__insignia {
     
     font-family: "Pinyon Script", cursive;
-    font-size: 3rem;
+    font-size: rem;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
@@ -328,7 +328,7 @@ $color1:#CCD5AE ;
   
   .contenedorGaleria {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: auto 200px ;
     grid-template-rows: repeat(4, 200px);
     grid-template-areas:
     "titulo imagen1"
@@ -346,6 +346,7 @@ $color1:#CCD5AE ;
     align-self: end;
     background-color: #E9EDC9;
     text-align: center;
+    font-size: 2rem!important;
   }
   
   .textoGrilla {
@@ -389,22 +390,22 @@ $color1:#CCD5AE ;
 }
 
  .section3--fotoJunta {
-    width: 150px;
+    min-width: 150px!important;
     height: auto;
-    max-width: 200px;
+    max-width: 100%;
   }
   
 
   .section3--fotoJunta2 {
       max-width: 100%;
-      max-width: 200px;
+      min-width: 300px;
       height: auto;
     }
 
     .section3--fotoJunta3 {
       max-width: 100%;
-      max-width: 200px;
-      height: auto;}
+/*       max-width: 200px; */
+        height: 200px;}
 
       /* IMAGENES  */
   img {
@@ -430,6 +431,7 @@ $color1:#CCD5AE ;
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
   }
 
@@ -442,8 +444,8 @@ $color1:#CCD5AE ;
     align-content: flex-end;
     padding-top: 0.2rem;
     padding-bottom: 0.5rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0rem;
+    margin-top: 0rem!important;
+    margin-bottom: 0rem!important;
   }
   
   /* -------FLEX SOBRE FOOTER----- */
@@ -462,7 +464,36 @@ $color1:#CCD5AE ;
     text-decoration: none;
   }
   
+  .footer__elementoFooter {
+    color: black;
+    font-size: 1.5rem !important;
+    text-decoration: none;
+    background-color: #ccd5ae;
+  }
   
+  .footer__elementoFooter:hover{
+  color: black; text-decoration: none 
+  }
+  
+  h5.footer__seguinos{
+      font-family : "Pinyon Script", "cursive"!important;
+      color: #c59d5f;
+      background-color: transparent;
+      font-size: 3rem !important;
+      line-height: 26px;
+      font-weight: bold;
+      text-transform: capitalize;
+      text-align: center;
+      opacity: 2;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 2rem
+  }
+  
+  .flex_footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
   /* -----------------------ESTILOS INDEX------------------------------- */
   
   .section3--letraCapit {
@@ -504,7 +535,7 @@ $color1:#CCD5AE ;
     .portada__insignia {
       
       font-family: "Pinyon Script", cursive;
-      font-size: 3rem;
+      font-size: 6rem!important;
       color: #c59d5f;
       background-color: transparent;
       line-height: 26px;
@@ -790,27 +821,26 @@ $color1:#CCD5AE ;
     }
     
    .section3--fotoJunta {
-      width: 150px;
+      min-width: 200px;
       height: auto;
-      max-width: 200px;
+      max-width: 100%;
     }
     
 
     .section3--fotoJunta2 {
         max-width: 100%;
-        max-width: 200px;
+        min-width: 200px;
         height: auto;
       }
 
       .section3--fotoJunta3 {
         max-width: 100%;
-        max-width: 226px;
-        height: auto;}
+        height: 200px;}
 
         .contenedorGaleria {
           display: grid;
-          grid-template-columns: 280px 300px;
-          grid-template-rows: repeat(4, 226px);
+          grid-template-columns: auto 300px;
+          grid-template-rows: repeat(4, 200px);
           grid-template-areas:
           "titulo imagen1"
           "texto imagen2"
@@ -827,6 +857,7 @@ $color1:#CCD5AE ;
           align-self: end;
           background-color: #E9EDC9;
           text-align: center;
+          font-size: 2rem;
         }
         
         .textoGrilla {
@@ -896,6 +927,7 @@ $color1:#CCD5AE ;
       left: 0;
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
     }
     
@@ -916,18 +948,45 @@ $color1:#CCD5AE ;
 
 
     .footer--position{
-        align-items: center;
-        padding: ($padding -1);
+      align-items: center;
+      padding: ($padding -1);
+    text-align: center;
+    justify-items: end;
+      }
+  
+  .footer__elementoFooter {
+    color: black;
+    font-size: 1.5rem !important;
+    text-decoration: none;
+    background-color: #ccd5ae;
+  }
+  
+  .footer__elementoFooter:hover{
+  color: black; text-decoration: none 
+  }
+  
+  h5.footer__seguinos{
+      font-family : "Pinyon Script", "cursive"!important;
+      color: #c59d5f;
+      background-color: transparent;
+      font-size: 3rem !important;
+      line-height: 26px;
+      font-weight: bold;
+      text-transform: capitalize;
       text-align: center;
-      justify-items: end;
-        }
+      opacity: 2;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 2rem
+  }
+  
+  .flex_footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .footer__elementoFooter {
-      color: #041527;
-      font-size: 2.5rem;
-      text-decoration: none;
-    }
-    
+
+
     
     /* -----------------------ESTILOS INDEX------------------------------- */
     
@@ -1215,32 +1274,30 @@ $color1:#CCD5AE ;
     }
     
     .section3--fotoJunta {
-      /*       max-width: 100%; */
+       max-width: 100%;
             width: 800px;
             height: 300px;
           }
           
       
           .section3--fotoJunta2 {
-      /*         max-width: 100%; */
               width: 200px;
-              height: 300px;
+              height: auto;
+              max-width: 100%;
             }
       
             .section3--fotoJunta3 {
-              width: 300px;
+              max-width: 100%;
               height: 300px;
             }
 
             .contenedorGaleria {
               display: grid;
-              grid-template-columns: 200px 300px 300px; 
+              grid-template-columns: auto 250px 250px !important; 
               grid-template-rows: repeat(2, 300px);
               grid-template-areas:
               "titulo imagen1 imagen2"
-              "texto imagen3 imagen4"
-/*               "texto imagen3"
-              "texto imagen4"; */;
+              "texto imagen3 imagen4";
               background-color: #E9EDC9;
               border-width: 0.1;
               justify-items: stretch;
@@ -1342,6 +1399,7 @@ $color1:#CCD5AE ;
       left: 0;
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
     }
     
@@ -1720,16 +1778,10 @@ $color1:#CCD5AE ;
       
     }
     
-/*     .section3--fotoJunta {
-      display: inline-block;
-      width: 1200px;
-      height: 300px;
-    }
-     */
 
      .contenedorGaleria {
       display: grid;
-      grid-template-columns: 300px 300px 300px;
+      grid-template-columns: auto 300px 300px;
       grid-template-rows: repeat(2, 300px);
       grid-template-areas:
       "titulo imagen1 imagen2"
@@ -1788,7 +1840,7 @@ $color1:#CCD5AE ;
   }
 
   .section3--fotoJunta3 {
-    width: 300px;
+    max-width: 100%;
     height: 300px;
   }
 
@@ -1808,6 +1860,7 @@ $color1:#CCD5AE ;
       padding-bottom: 25%; 
       padding-top: 2rem;
       height: 0;
+      overflow: hidden;
   
     .contenedor_video iframe {
       position: absolute;
@@ -1815,6 +1868,7 @@ $color1:#CCD5AE ;
       left: 0;
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
     } 
 
@@ -1841,13 +1895,42 @@ $color1:#CCD5AE ;
       text-align: center;
       justify-items: end;
         }
+  
+  .footer__elementoFooter {
+    color: black;
+    font-size: 1.5rem !important;
+    text-decoration: none;
+    background-color: #ccd5ae;
+  }
+  
+  .footer__elementoFooter:hover{
+  color: black; text-decoration: none 
+  }
+  
+  h5.footer__seguinos{
+      font-family : "Pinyon Script", "cursive"!important;
+      color: #c59d5f;
+      background-color: transparent;
+      font-size: 3rem !important;
+      line-height: 26px;
+      font-weight: bold;
+      text-transform: capitalize;
+      text-align: center;
+      opacity: 2;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 2rem
+  }
+  
+  .flex_footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .footer__elementoFooter {
-      color: #041527;
-      font-size: 2.5rem;
-      text-decoration: none;
-    }
-    
+
+
+
+
     /* -----------------------ESTILOS INDEX------------------------------- */
     
     .section3--letraCapit {
@@ -2188,6 +2271,7 @@ $color1:#CCD5AE ;
       padding-bottom: 25%; 
       padding-top: 2rem;
       height: 0;
+      overflow: hidden;
   
     .contenedor_video iframe {
       position: absolute;
@@ -2195,31 +2279,68 @@ $color1:#CCD5AE ;
       left: 0;
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
     } 
 
     
     /* --------------FORMATO SOBRE FOOTER------------------------- */
     .footer--color {
-        background-color:  #CCD5AE;
-      }
+      background-color: #ccd5ae;
+      bottom: 0px;
+      justify-content: center;
+      align-items: center;
+      align-content: flex-end;
+      padding-top: 0.2rem;
+      padding-bottom: 0.5rem;
+      margin-top: 0.25rem;
+      margin-bottom: 0rem;
+    }
     /* -------FLEX SOBRE FOOTER----- */
 
-    .footer--position{
-        align-items: center;
-        padding: ($padding -1);
-      text-align: center;
-      justify-items: end;
-        }
 
+    .footer--position{
+      align-items: center;
+      padding: ($padding -1);
+    text-align: center;
+    justify-items: end;
+      }
 
     .footer__elementoFooter {
-      color: #041527;
-      font-size: 2.5rem;
+      color: black;
+      font-size: 1.5rem !important;
       text-decoration: none;
-
+      background-color: #ccd5ae;
     }
-    
+
+    .footer__elementoFooter:hover{
+    color: black; text-decoration: none 
+    }
+
+    h5.footer__seguinos{
+        font-family : "Pinyon Script", "cursive"!important;
+        color: #c59d5f;
+        background-color: transparent;
+        font-size: 3rem !important;
+        line-height: 26px;
+        font-weight: bold;
+        text-transform: capitalize;
+        text-align: center;
+        opacity: 2;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem
+    }
+
+    .flex_footer{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+
+
+
     /* -----------------------ESTILOS INDEX------------------------------- */
     
     .section3--letraCapit {

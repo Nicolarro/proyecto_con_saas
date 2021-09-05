@@ -59,22 +59,41 @@ $color3:#d5d5d5;
   .imagen1 {
     @extend .grillaPosicion;
     grid-area: imagen1;
+    
   }
   
+  .imagen1:hover{
+    transform: scale(1.2);
+    z-index: 3;
+  }
 
   .imagen2 {
     @extend .grillaPosicion;
     grid-area: imagen2;
   }
+
+  .imagen2:hover{
+    transform: scale(1.2);
+    z-index: 3;
+  }
   
   .imagen3 {
     @extend .grillaPosicion;
     grid-area: imagen3;
-
+  }
+  
+  .imagen3:hover{
+    transform: scale(1.2);
+    z-index: 2;
   }
   
   .imagen4 {
     @extend .grillaPosicion;
     grid-area: imagen4;
+ 
+  }
+  .imagen4:hover{
+    transform: scale(1.2);
+    z-index: 2;
   }
 }
