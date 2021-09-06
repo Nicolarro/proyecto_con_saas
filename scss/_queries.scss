@@ -220,8 +220,9 @@ $color1:#CCD5AE ;
                           justify-content: center;
                           align-items: center;
                             .fondoProductos_texto{
-                                font-family: "Pinyon Script",;
-                                font-size: 2.5rem;
+                                font-family: "Pinyon Script", cursive;
+                                font-size: 2.5rem!important;
+                                text-align: justify;
                                  color: #c59d5f;
                                 background-color: transparent;
                                 line-height: 26px;
@@ -290,7 +291,10 @@ $color1:#CCD5AE ;
     margin-bottom: 1rem;
   }
   
-  
+  .containerflex--estilocaja :hover{
+    color: #c59d5f;
+  }
+
   .containerflex__tituloBox{
     font-weight: bold;
     margin-top: 2rem;
@@ -368,6 +372,10 @@ $color1:#CCD5AE ;
     grid-area: imagen1;
   }
   
+  .imagen1:hover{
+    transform: scale(1.2);
+    z-index: 3;
+  }
 
   .imagen2 {
     margin: 0px;
@@ -375,18 +383,32 @@ $color1:#CCD5AE ;
     grid-area: imagen2;
   }
   
+  .imagen2:hover{
+    transform: scale(1.2);
+    z-index: 3;
+  }
+
   .imagen3 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen3;
-
   }
   
+  .imagen3:hover{
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
   .imagen4 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen4;
   }
+  .imagen4:hover{
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
 }
 
  .section3--fotoJunta {
@@ -712,7 +734,7 @@ $color1:#CCD5AE ;
                             justify-content: center;
                             align-items: center;
                               .fondoProductos_texto{
-                                  font-family: "Pinyon Script",;
+                                  font-family: "Pinyon Script", cursive;
                                   font-size: 2.5rem;
                                    color: #c59d5f;
                                   background-color: transparent;
@@ -784,7 +806,9 @@ $color1:#CCD5AE ;
       margin-bottom: 1rem;
     }
     
-    
+      .containerflex--estilocaja :hover{
+    color: #c59d5f;
+  }
     .containerflex__tituloBox{
       font-weight: bold;
       margin-top: 2rem;
@@ -879,6 +903,10 @@ $color1:#CCD5AE ;
           grid-area: imagen1;
         }
         
+          .imagen1:hover{
+      transform: scale(1.2);
+      z-index: 3;
+      }
       
         .imagen2 {
           margin: 0px;
@@ -886,6 +914,11 @@ $color1:#CCD5AE ;
           grid-area: imagen2;
         }
         
+        .imagen2:hover{
+          transform: scale(1.2);
+          z-index: 3;
+        }
+
         .imagen3 {
           margin: 0px;
           justify-self: center;
@@ -893,11 +926,22 @@ $color1:#CCD5AE ;
       
         }
         
+        .imagen3:hover{
+          transform: scale(1.2);
+          z-index: 2;
+        }
+        
         .imagen4 {
           margin: 0px;
           justify-self: center;
           grid-area: imagen4;
         }
+
+        .imagen4:hover{
+          transform: scale(1.2);
+          z-index: 2;
+        }
+
       }
 
 
@@ -1192,7 +1236,7 @@ $color1:#CCD5AE ;
                             justify-content: center;
                             align-items: center;
                               .fondoProductos_texto{
-                                  font-family: "Pinyon Script",;
+                                  font-family: "Pinyon Script", cursive;
                                   font-size: 3rem;
                                    color: #c59d5f;
                                   background-color: transparent;
@@ -1264,7 +1308,10 @@ $color1:#CCD5AE ;
       margin-bottom: 1rem;
     }
     
-    
+    .containerflex--estilocaja :hover{
+      color: #c59d5f;
+    }
+
     .containerflex__tituloBox{
       font-weight: bold;
       margin-top: 2rem;
@@ -1330,24 +1377,41 @@ $color1:#CCD5AE ;
               grid-area: imagen1;
             }
             
-          
+            .imagen1:hover{
+              transform: scale(1.2);
+              z-index: 3;
+            }
+
             .imagen2 {
               margin: 0px;
               justify-self: center;
               grid-area: imagen2;
             }
             
+            .imagen2:hover{
+              transform: scale(1.2);
+              z-index: 3;
+            }
+
             .imagen3 {
               margin: 0px;
               justify-self: center;
               grid-area: imagen3;
-          
+            }
+
+            .imagen3:hover{
+              transform: scale(1.2);
+              z-index: 2;
             }
             
             .imagen4 {
               margin: 0px;
               justify-self: center;
               grid-area: imagen4;
+            }
+            .imagen4:hover{
+              transform: scale(1.2);
+              z-index: 2;
             }
           }
 
@@ -1668,7 +1732,7 @@ $color1:#CCD5AE ;
                             justify-content: center;
                             align-items: center;
                               .fondoProductos_texto{
-                                  font-family: "Pinyon Script",;
+                                  font-family: "Pinyon Script", cursive;
                                   font-size: 5rem;
                                    color: #c59d5f;
                                   background-color: transparent;
@@ -1742,7 +1806,9 @@ $color1:#CCD5AE ;
       margin-bottom: 1rem;
     }
     
-    
+      .containerflex--estilocaja :hover{
+    color: #c59d5f;
+  }
     .containerflex__tituloBox{
       font-weight: bold;
       margin-top: 2rem;
@@ -2158,15 +2224,15 @@ $color1:#CCD5AE ;
                             justify-content: center;
                             align-items: center;
                               .fondoProductos_texto{
-                                  font-family: "Pinyon Script",;
-                                  font-size: 5rem;
+                                  font-family: "Pinyon Script", cursive;
+                                  font-size: 7rem;
                                    color: #c59d5f;
                                   background-color: transparent;
                                   line-height: 26px;
-                                  font-weight: 300;
+                                  font-weight: 400;
                                   text-transform: capitalize;
                                   text-align: center;
-                                  opacity: 10;
+                                  opacity: 1;
                                   display: block;
                                   margin-top: 2rem;
                                   margin-bottom: 14rem;
@@ -2232,7 +2298,9 @@ $color1:#CCD5AE ;
       margin-bottom: 1rem;
     }
     
-    
+    .containerflex--estilocaja :hover{
+      color: #c59d5f;
+    }
     .containerflex__tituloBox{
       font-weight: bold;
       margin-top: 2rem;

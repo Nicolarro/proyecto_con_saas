@@ -174,6 +174,10 @@ h5.footer__seguinos {
   opacity: 1;
 }
 
+.containerFlex .containerflex--estilocaja :hover {
+  color: #c59d5f;
+}
+
 /* FLEX SOBRE SECTION EN SERVICIOS  */
 .padreServicios {
   background-color: #E9EDC9;
@@ -544,6 +548,20 @@ dl dd {
   text-align: 1px;
 }
 
+ul.animado {
+  animation-duration: 4s;
+  animation-name: aparece;
+}
+
+@keyframes aparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* -------MEDIA QUERY PARA LA PAGINA- MOBILE FIRST------- */
 @media (max-width: 575px) {
   * {
@@ -730,8 +748,9 @@ dl dd {
     align-items: center;
   }
   .fondoProductos .fondoProductos_texto {
-    font-family: "Pinyon Script";
-    font-size: 2.5rem;
+    font-family: "Pinyon Script", cursive;
+    font-size: 2.5rem !important;
+    text-align: justify;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
@@ -787,6 +806,9 @@ dl dd {
     border-color: #c59d5f;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .containerflex--estilocaja :hover {
+    color: #c59d5f;
   }
   .containerflex__tituloBox {
     font-weight: bold;
@@ -853,20 +875,36 @@ dl dd {
     justify-self: center;
     grid-area: imagen1;
   }
+  .contenedorGaleria .imagen1:hover {
+    transform: scale(1.2);
+    z-index: 3;
+  }
   .contenedorGaleria .imagen2 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen2;
+  }
+  .contenedorGaleria .imagen2:hover {
+    transform: scale(1.2);
+    z-index: 3;
   }
   .contenedorGaleria .imagen3 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen3;
   }
+  .contenedorGaleria .imagen3:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
   .contenedorGaleria .imagen4 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen4;
+  }
+  .contenedorGaleria .imagen4:hover {
+    transform: scale(1.2);
+    z-index: 2;
   }
   .section3--fotoJunta {
     min-width: 150px !important;
@@ -1152,7 +1190,7 @@ dl dd {
     align-items: center;
   }
   .fondoProductos .fondoProductos_texto {
-    font-family: "Pinyon Script";
+    font-family: "Pinyon Script", cursive;
     font-size: 2.5rem;
     color: #c59d5f;
     background-color: transparent;
@@ -1209,6 +1247,9 @@ dl dd {
     border-color: #c59d5f;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .containerflex--estilocaja :hover {
+    color: #c59d5f;
   }
   .containerflex__tituloBox {
     font-weight: bold;
@@ -1289,20 +1330,36 @@ dl dd {
     justify-self: center;
     grid-area: imagen1;
   }
+  .contenedorGaleria .imagen1:hover {
+    transform: scale(1.2);
+    z-index: 3;
+  }
   .contenedorGaleria .imagen2 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen2;
+  }
+  .contenedorGaleria .imagen2:hover {
+    transform: scale(1.2);
+    z-index: 3;
   }
   .contenedorGaleria .imagen3 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen3;
   }
+  .contenedorGaleria .imagen3:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
   .contenedorGaleria .imagen4 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen4;
+  }
+  .contenedorGaleria .imagen4:hover {
+    transform: scale(1.2);
+    z-index: 2;
   }
   /* IMAGENES  */
   img {
@@ -1560,7 +1617,7 @@ dl dd {
     align-items: center;
   }
   .fondoProductos .fondoProductos_texto {
-    font-family: "Pinyon Script";
+    font-family: "Pinyon Script", cursive;
     font-size: 3rem;
     color: #c59d5f;
     background-color: transparent;
@@ -1618,6 +1675,9 @@ dl dd {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  .containerflex--estilocaja :hover {
+    color: #c59d5f;
+  }
   .containerflex__tituloBox {
     font-weight: bold;
     margin-top: 2rem;
@@ -1673,20 +1733,36 @@ dl dd {
     justify-self: center;
     grid-area: imagen1;
   }
+  .contenedorGaleria .imagen1:hover {
+    transform: scale(1.2);
+    z-index: 3;
+  }
   .contenedorGaleria .imagen2 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen2;
+  }
+  .contenedorGaleria .imagen2:hover {
+    transform: scale(1.2);
+    z-index: 3;
   }
   .contenedorGaleria .imagen3 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen3;
   }
+  .contenedorGaleria .imagen3:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
   .contenedorGaleria .imagen4 {
     margin: 0px;
     justify-self: center;
     grid-area: imagen4;
+  }
+  .contenedorGaleria .imagen4:hover {
+    transform: scale(1.2);
+    z-index: 2;
   }
   /* -------FORMATO A PARRAFOS------- */
   .section3__parrafos {
@@ -1962,7 +2038,7 @@ dl dd {
     align-items: center;
   }
   .fondoProductos .fondoProductos_texto {
-    font-family: "Pinyon Script";
+    font-family: "Pinyon Script", cursive;
     font-size: 5rem;
     color: #c59d5f;
     background-color: transparent;
@@ -2019,6 +2095,9 @@ dl dd {
     border-color: #c59d5f;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .containerflex--estilocaja :hover {
+    color: #c59d5f;
   }
   .containerflex__tituloBox {
     font-weight: bold;
@@ -2374,15 +2453,15 @@ dl dd {
     align-items: center;
   }
   .fondoProductos .fondoProductos_texto {
-    font-family: "Pinyon Script";
-    font-size: 5rem;
+    font-family: "Pinyon Script", cursive;
+    font-size: 7rem;
     color: #c59d5f;
     background-color: transparent;
     line-height: 26px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: capitalize;
     text-align: center;
-    opacity: 10;
+    opacity: 1;
     display: block;
     margin-top: 2rem;
     margin-bottom: 14rem;
@@ -2431,6 +2510,9 @@ dl dd {
     border-color: #c59d5f;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .containerflex--estilocaja :hover {
+    color: #c59d5f;
   }
   .containerflex__tituloBox {
     font-weight: bold;

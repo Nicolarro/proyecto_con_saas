@@ -217,3 +217,17 @@ div{
     }
 
     .listaProductos{text-align: 1px;}
+
+    ul.animado{
+      animation-duration: 4s;
+      animation-name: aparece;
+    }
+    @keyframes aparece{
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+   
+    }
